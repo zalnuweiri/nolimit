@@ -7,6 +7,67 @@ import imgScreenshot20260224At33952Pm1 from "../assets/7e6feab11736e6d4ff0f7e4d7
 import imgW511 from "../assets/dda9ddf98bcef1501a24eede91678cadf12548a3.png";
 import CoterieVoFinalNew from "./CoterieVoFinalNew111";
 
+function WhatWeDoSection() {
+    return (
+        <div className="w-full bg-[#3a2e2a] py-[120px]">
+            <div className="max-w-[1280px] mx-auto px-[72px] flex justify-between items-start">
+
+                {/* LEFT */}
+                <div className="max-w-[420px]">
+                    <p className="font-['Rangen'] text-[64px] leading-[1.2] text-[#f1e9da]">
+                        The things we’re good at
+                    </p>
+                </div>
+
+                {/* RIGHT */}
+                <div className="w-[640px] flex flex-col">
+
+                    {/* ITEM */}
+                    <div className="flex justify-between gap-[40px] py-[24px] border-b border-[#f1e9da]/30">
+                        <p className="font-['Helvetica:Bold'] text-[18px] tracking-[1.5px] text-[#f1e9da] uppercase w-[300px]">
+                            Campaign Strategy & Activation
+                        </p>
+                        <p className="font-['Helvetica'] text-[16px] leading-[1.6] text-[#f1e9da] w-[300px]">
+                            Culture-led campaigns that create real-world moments. We get people talking and keep them talking.
+                        </p>
+                    </div>
+
+                    {/* ITEM */}
+                    <div className="flex justify-between gap-[40px] py-[24px] border-b border-[#f1e9da]/30">
+                        <p className="font-['Helvetica:Bold'] text-[18px] tracking-[1.5px] text-[#f1e9da] uppercase w-[300px]">
+                            Brand Storytelling & Copywriting
+                        </p>
+                        <p className="font-['Helvetica'] text-[16px] leading-[1.6] text-[#f1e9da] w-[300px]">
+                            From manifestos to campaign copy to tone of voice, we give your brand a voice people actually want to hear.
+                        </p>
+                    </div>
+
+                    {/* ITEM */}
+                    <div className="flex justify-between gap-[40px] py-[24px] border-b border-[#f1e9da]/30">
+                        <p className="font-['Helvetica:Bold'] text-[18px] tracking-[1.5px] text-[#f1e9da] uppercase w-[300px]">
+                            Content Creation & Direction
+                        </p>
+                        <p className="font-['Helvetica'] text-[16px] leading-[1.6] text-[#f1e9da] w-[300px]">
+                            Content that stops the scroll and starts the conversation. Strategy, creative direction, and production — end to end.
+                        </p>
+                    </div>
+
+                    {/* ITEM */}
+                    <div className="flex justify-between gap-[40px] py-[24px]">
+                        <p className="font-['Helvetica:Bold'] text-[18px] tracking-[1.5px] text-[#f1e9da] uppercase w-[300px]">
+                            Community & Social Strategy
+                        </p>
+                        <p className="font-['Helvetica'] text-[16px] leading-[1.6] text-[#f1e9da] w-[300px]">
+                            Audiences are built, not bought. We turn followers into fans and fans into advocates.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    );
+}
+
 function Group() {
   return (
     <div className="h-[91.692px] relative shrink-0 w-[463px]">
@@ -149,9 +210,9 @@ function Frame10() {
 
 function Frame11() {
   return (
-    <div className="absolute content-stretch flex gap-[20px] items-center left-[72px] top-[3554px]">
-      <Frame8 />
-      <Frame10 />
+    <div className="absolute content-stretch flex gap-[20px] items-center left-[72px] top-[3754px]">
+        {/*<Frame8 />
+      <Frame10 />*/}
     </div>
   );
 }
@@ -550,15 +611,16 @@ export default function SilentHWebsiteHomeDesktop() {
                   </div>
               </div>
               <Frame19/>
-              <div className="absolute h-[480px] -left-29 top-[3054px] w-screen" data-name="NotLimited-Mickey 1">
+              <div className="absolute h-[480px] -left-29 top-[3154px] w-screen" data-name="NotLimited-Mickey 1">
+                      <WhatWeDoSection/>
                   <video autoPlay className="absolute max-w-none object-cover size-full" controlsList="nodownload" loop
                          playsInline>
                       <source src="/NLMICKEY.mp4"/>
                   </video>
               </div>
               <Frame11/>
-              <div
-                  className="-translate-x-1/2 absolute left-1/2 not-italic text-center top-[4131px] uppercase w-[754px] whitespace-pre-wrap"
+              {/*<div
+                  className="-translate-x-1/2 absolute left-1/2 not-italic text-center top-[4231px] uppercase w-[754px] whitespace-pre-wrap"
                   style={{
                       fontFamily: 'Helvetica',
                       fontSize: '80px',
@@ -575,7 +637,7 @@ export default function SilentHWebsiteHomeDesktop() {
               <Frame15/>
               <Frame16/>
               <Frame17/>
-              <Frame18/>
+              <Frame18/>*/}
           </div>
       </div>
         <MobileFooter/>
