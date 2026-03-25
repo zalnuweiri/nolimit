@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Rangen';
+  src: url('/fonts/Rangen.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Helvetica font stack - using system fonts */
+@font-face {
+  font-family: 'Helvetica';
+  src: local('Helvetica Neue'), local('Helvetica'), local('Arial');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: local('Helvetica Neue Bold'), local('Helvetica Bold'), local('Arial Bold');
+  font-weight: 700;
+  font-style: normal;
+}
