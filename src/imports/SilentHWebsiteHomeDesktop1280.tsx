@@ -1,6 +1,13 @@
 import svgPaths from "./svg-lnnw8or0xj";
 import imgScreenshot20260224At121017Pm1 from "../assets/7b0b2511407939991732caa0f6265b4de72e59c2.png";
-import imgScreenshot20260224At34231Pm1 from "../assets/dba366eb4de234a25919529b2ff74112a31caf6e.png";
+import img1 from "../assets/img1.png";
+import img2 from "../assets/img2.png";
+import img3 from "../assets/img3.png"
+import img4 from "../assets/img4.png"
+import img6 from "../assets/img6.jpg"
+import img7 from "../assets/img7.png"
+import img8 from "../assets/img8.png"
+import img9 from "../assets/img9.png"
 import imgW211 from "../assets/1900f8207e4f9f54b749cff985df73aac8c44509.png";
 import imgScreenshot20260224At34135Pm1 from "../assets/358c83f9ee4cb440d306cc5a5c4c43209c64d780.png";
 import imgScreenshot20260224At33952Pm1 from "../assets/7e6feab11736e6d4ff0f7e4d72d3a208dc3435cc.png";
@@ -19,38 +26,42 @@ function Affiliates() {
 
 function ImageGridSection() {
     return (
-        <div className="absolute top-[1958px] xl:scale-[0.65] xl:top-[1450px] left-1/2 -translate-x-1/2 w-full max-w-[1140px] grid grid-cols-3 gap-[20px]">
+        <div
+            className="absolute top-[1958px] xl:scale-[0.65] xl:top-[1496px] left-1/2 -translate-x-1/2 w-full max-w-[1140px] grid grid-cols-3 gap-[20px]">
 
             {/* ROW 1 */}
             <div className="h-[652px] w-[367px] rounded-[24px] overflow-hidden">
-                <img src={imgScreenshot20260224At34231Pm1} className="w-full h-full object-cover" />
+                <img src={img1} className="w-full h-full object-cover"/>
             </div>
             <div className="h-[652px] w-[367px] rounded-[24px] overflow-hidden">
-                <img src={imgScreenshot20260224At34135Pm1} className="w-full h-full object-cover" />
+                <img src={img2} className="w-full h-full object-cover"/>
             </div>
             <div className="h-[652px] w-[367px] rounded-[24px] overflow-hidden">
-                <img src={imgW511} className="w-full h-full object-cover" />
+                <img src={img3} className="w-full h-full object-cover"/>
             </div>
+            {/*<div className="h-[652px] w-[367px] rounded-[24px] overflow-hidden">
+                <img src={imgW511} className="w-full h-full object-cover"/>
+            </div>*/}
 
             {/* ROW 2 — FEATURE (BIG) */}
             <div className="col-span-3 h-[640px] w-[1137px] rounded-[24px] overflow-hidden">
-                <img src={imgW211} className="w-full h-full object-cover" />
+                <img src={img4} className="w-full h-full object-cover"/>
             </div>
 
             {/* ROW 3 */}
             <div className="h-[652px] w-[367px]  rounded-[24px] overflow-hidden">
-                <img src={imgScreenshot20260224At34231Pm1} className="w-full h-full object-cover" />
+                <img src={img6} className="w-full h-full object-cover"/>
             </div>
             <div className="h-[652px] w-[367px]  rounded-[24px] overflow-hidden">
-                <img src={imgScreenshot20260224At33952Pm1} className="w-full h-full object-cover" />
+                <img src={img7} className="w-full h-full object-cover"/>
             </div>
             <div className="h-[652px] w-[367px]  rounded-[24px] overflow-hidden">
-                <img src={imgScreenshot20260224At34135Pm1} className="w-full h-full object-cover" />
+                <img src={img8} className="w-full h-full object-cover"/>
             </div>
 
             {/* ROW 4 — FEATURE (BIGGER) */}
             <div className="col-span-3 h-[640px] w-[1137px] rounded-[24px] overflow-hidden">
-                <img src={imgScreenshot20260224At33952Pm1} className="w-full h-full object-cover" />
+                <img src={img9} className="w-full h-full object-cover"/>
             </div>
 
         </div>
@@ -59,11 +70,11 @@ function ImageGridSection() {
 
 function WhatWeDoSection() {
     return (
-        <div className="w-full bg-[#3a2e2a] py-[120px]">
+        <div className="w-full bg-[#3a2e2a] py-[90px]">
             <div className="max-w-[1280px] mx-auto px-[72px] flex justify-between items-start">
 
                 {/* LEFT */}
-                <div className="max-w-[420px]">
+                <div className="max-w-[420px] mt-[16%]">
                     <p className="font-['Rangen'] text-[64px] leading-[1.2] text-[#f1e9da]">
                         The things we’re good at
                     </p>
@@ -73,41 +84,41 @@ function WhatWeDoSection() {
                 <div className="w-[640px] flex flex-col">
 
                     {/* ITEM */}
-                    <div className="flex justify-between gap-[40px] py-[24px] border-b border-[#f1e9da]/30">
-                        <p className="font-['Helvetica:Bold'] text-[18px] tracking-[1.5px] text-[#f1e9da] uppercase w-[300px]">
+                    <div className="flex justify-between gap-[40px] py-[24px] border-b border-dashed  border-[#f1e9da]/70">
+                        <p className="font-['Helvetica:Bold',sans-serif] font-[700] text-[18px] tracking-[1.5px] text-[#f1e9da] uppercase w-[300px]">
                             Campaign Strategy & Activation
                         </p>
-                        <p className="font-['Helvetica'] text-[16px] leading-[1.6] text-[#f1e9da] w-[300px]">
+                        <p className="font-['Helvetica',sans-serif] font-[400] text-[16px] leading-[1.6] text-[#f1e9da] w-[300px]">
                             Culture-led campaigns that create real-world moments. We get people talking and keep them talking.
                         </p>
                     </div>
 
                     {/* ITEM */}
-                    <div className="flex justify-between gap-[40px] py-[24px] border-b border-[#f1e9da]/30">
-                        <p className="font-['Helvetica:Bold'] text-[18px] tracking-[1.5px] text-[#f1e9da] uppercase w-[300px]">
+                    <div className="flex justify-between gap-[40px] py-[24px] border-b border-dashed border-[#f1e9da]/70">
+                        <p className="font-['Helvetica:Bold',sans-serif] font-[700] text-[18px] tracking-[1.5px] text-[#f1e9da] uppercase w-[300px]">
                             Brand Storytelling & Copywriting
                         </p>
-                        <p className="font-['Helvetica'] text-[16px] leading-[1.6] text-[#f1e9da] w-[300px]">
+                        <p className="font-['Helvetica',sans-serif] font-[400] text-[16px] leading-[1.6] text-[#f1e9da] w-[300px]">
                             From manifestos to campaign copy to tone of voice, we give your brand a voice people actually want to hear.
                         </p>
                     </div>
 
                     {/* ITEM */}
-                    <div className="flex justify-between gap-[40px] py-[24px] border-b border-[#f1e9da]/30">
-                        <p className="font-['Helvetica:Bold'] text-[18px] tracking-[1.5px] text-[#f1e9da] uppercase w-[300px]">
+                    <div className="flex justify-between gap-[40px] py-[24px] border-b border-dashed  border-[#f1e9da]/70">
+                        <p className="font-['Helvetica:Bold',sans-serif] font-[700] text-[18px] tracking-[1.5px] text-[#f1e9da] uppercase w-[300px]">
                             Content Creation & Direction
                         </p>
-                        <p className="font-['Helvetica'] text-[16px] leading-[1.6] text-[#f1e9da] w-[300px]">
+                        <p className="font-['Helvetica',sans-serif] font-[400] text-[16px] leading-[1.6] text-[#f1e9da] w-[300px]">
                             Content that stops the scroll and starts the conversation. Strategy, creative direction, and production — end to end.
                         </p>
                     </div>
 
                     {/* ITEM */}
                     <div className="flex justify-between gap-[40px] py-[24px]">
-                        <p className="font-['Helvetica:Bold'] text-[18px] tracking-[1.5px] text-[#f1e9da] uppercase w-[300px]">
+                        <p className="font-['Helvetica:Bold',sans-serif] font-[700] text-[18px] tracking-[1.5px] text-[#f1e9da] uppercase w-[300px]">
                             Community & Social Strategy
                         </p>
-                        <p className="font-['Helvetica'] text-[16px] leading-[1.6] text-[#f1e9da] w-[300px]">
+                        <p className="font-['Helvetica',sans-serif] font-[400] text-[16px] leading-[1.6] text-[#f1e9da] w-[300px]">
                             Audiences are built, not bought. We turn followers into fans and fans into advocates.
                         </p>
                     </div>
@@ -486,36 +497,36 @@ function LucideInfinity() {
   );
 }
 
-function Frame19() {
+function BeliefsSec() {
     return (
-        <div className="absolute left-[calc(50%-320px)] top-[1375px] w-[640px] flex flex-col gap-[48px] text-[#3a2e2a]">
+        <div className="absolute left-[calc(50%-320px)] top-[1315px] w-[640px] flex flex-col gap-[48px] text-[#3a2e2a]">
 
             {/* BLOCK 1 */}
             <div className="flex flex-col gap-[12px]">
-                <p className="font-['Helvetica:Bold'] text-[18px] tracking-[1.2px]">
+                <p className="font-['Helvetica:Bold',sans-serif] text-[18px] tracking-[1.2px]">
                     Culture over strategy
                 </p>
-                <p className="font-['Helvetica'] text-[16px] leading-[1.6]">
+                <p className="font-['Helvetica:Bold',sans-serif] text-[16px] leading-[1.6]">
                     You can have the best strategy with all the right intentions, but if it doesn't speak the language of culture, it won't move a soul. We decode what matters to your audience. Stories make your brand human.
                 </p>
             </div>
 
             {/* BLOCK 2 */}
             <div className="flex flex-col gap-[12px]">
-                <p className="font-['Helvetica:Bold'] text-[18px] tracking-[1.2px]">
+                <p className="font-['Helvetica:Bold',sans-serif] text-[18px] tracking-[1.2px]">
                     Stories make your brand human
                 </p>
-                <p className="font-['Helvetica'] text-[16px] leading-[1.6]">
+                <p className="font-['Helvetica:Bold',sans-serif] text-[16px] leading-[1.6]">
                     Stories stick. We craft narratives that make people feel something. Because brands that make you feel become brands you believe in. Every touchpoint is an opportunity to deepen that story.
                 </p>
             </div>
 
             {/* BLOCK 3 */}
             <div className="flex flex-col gap-[12px]">
-                <p className="font-['Helvetica:Bold'] text-[18px] tracking-[1.2px]">
+                <p className="font-['Helvetica:Bold',sans-serif] text-[18px] tracking-[1.2px]">
                     Think Bigger
                 </p>
-                <p className="font-['Helvetica'] text-[16px] leading-[1.6]">
+                <p className="font-['Helvetica:Bold',sans-serif] text-[16px] leading-[1.6]">
                     We don't use limitations as excuses, we treat them as the exact conditions that produce unexpected, genuinely original thinking.
                 </p>
             </div>
@@ -586,53 +597,59 @@ export default function SilentHWebsiteHomeDesktop() {
       </div>
       
       {/* Content container - centered but allows full width for hero video */}
-      <div className="relative w-full" style={{ height: "5161px" }}>
-        <div className="absolute h-[700px] left-0 right-0 top-0">
+      <div className="relative w-full">
+        <div className="absolute h-[701px] left-0 right-0 top-0">
           <CoterieVoFinalNew />
         </div>
-        
-        {/* Centered content wrapper */}
+
+          {/* Centered content wrapper */}
           <div className="relative w-full max-w-[1280px] mx-auto" style={{height: "5161px"}}>
               <div
-                  className="absolute top-[866px] left-1/2 -translate-x-1/2 w-full max-w-[1100px] flex justify-between items-start">
+                  className="absolute top-[866px] left-[2.9%] w-full flex items-start">
 
                   {/* LEFT TEXT */}
-                  <p className="font-['Rangen'] text-[50px] leading-[60px] tracking-[2px] text-[#3a2e2a] whitespace-pre-wrap max-w-[420px] text-left">
-                      {"Storytellers\nStrategists\nOutliers."}
-                  </p>
+                  <div className="max-w-[420px]">
+                      <p className="font-['Rangen'] text-[50px] leading-[60px] tracking-[2px] text-[#3a2e2a] whitespace-pre-wrap text-left">
+                          {"Storytellers\nStrategists\nOutliers."}
+                      </p>
+                  </div>
+
+                  {/* SPACER (controls distance) */}
+                  <div className="w-[430px]" />
 
                   {/* RIGHT TEXT */}
-                  <div className="max-w-[520px] flex flex-col gap-[40px] text-left">
-                      <p className="font-['Helvetica'] text-[16px] leading-[1.6] text-[#3a2e2a]">
+                  <div className="max-w-[520px] flex flex-col gap-[40px] text-left -mt-13">
+                      <p className="font-['Helvetica',sans-serif] text-[16px] font-[400] leading-[1.2] tracking-[1.12px] text-[#3A2E2A]">
                           We started Notlimited because we believe brands deserve more than marketing. They deserve a
                           voice that cuts through. A strategy rooted in real culture.
                       </p>
 
-                      <p className="font-['Helvetica'] text-[16px] leading-[1.6] text-[#3a2e2a]">
+                      <p className="font-['Helvetica',sans-serif] text-[16px] font-[400] leading-[1.2] tracking-[1.12px] text-[#3A2E2A]">
                           At our core, we are culture strategists, we are obsessed with how people think, what they care
                           about, and what moves them. We don't just speak to audiences, we become part of their world.
                       </p>
 
-                      <p className="font-['Helvetica'] text-[16px] leading-[1.6] text-[#3a2e2a]">
+                      <p className="font-['Helvetica',sans-serif] text-[16px] font-[400] leading-[1.2] tracking-[1.12px] text-[#3A2E2A]">
                           We're the agency for brands ready to stop following the playbook and write their own.
                       </p>
                   </div>
 
               </div>
-              <div className="absolute h-[408px] left-[calc(35%+49.67px)] rounded-[32px] top-[1275px] w-[367px]">
+
+              <div className="absolute h-[408px] left-[calc(35%+49.67px)] rounded-[32px] top-[1215px] w-[367px]">
                   <p className="font-['Rangen'] text-[50px] leading-[60px] tracking-[2px] text-[#3a2e2a] whitespace-pre-wrap max-w-[420px] text-left">
                       {"Our Beliefs."}
                   </p>
               </div>
               <ImageGridSection/>
-              <Frame19/>
+              <BeliefsSec/>
 
 
-              <div className="absolute top-[3632px] -left-29 w-screen">
+              <div className="absolute top-[3703px] -left-29 w-screen">
                   <WhatWeDoSection/>
               </div>
               <div className="absolute h-[480px] -left-29 top-[4374px] w-screen" data-name="NotLimited-Mickey 1">
-                  <video autoPlay className="absolute max-w-none object-cover size-full" controlsList="nodownload" loop
+                  <video muted autoPlay className="absolute max-w-none object-cover size-full" controlsList="nodownload" loop
                          playsInline>
                       <source src="/NLMICKEY.mp4"/>
                   </video>
