@@ -19,7 +19,7 @@ function Affiliates() {
     return (
         <div className="relative size-full" data-name="Affiliates">
             <h2 className="font-['Rangen'] text-[50px] leading-[1.2] tracking-[2px] text-center pb-[60px] xl:scale-[1.1]">Our Co-Authors</h2>
-            <img src={affiliates} className="w-[681px] h-[370.1px] xl:scale-[1.1] object-contain ml-[20.4%] xl:ml-[23%]"/>
+            <img src={affiliates} className="w-[681px] h-[370.1px] xl:scale-[1.1] object-contain ml-[20.4%] xl:ml-[27%]"/>
         </div>
     )
 }
@@ -479,7 +479,7 @@ function Frame2() {
 
 function MobileFooter() {
   return (
-    <div className="absolute bg-[#3a2e2a] content-stretch flex flex-col h-[289px] items-center justify-center left-0 px-[36px] py-[80px] top-[5562px] w-full" data-name="Mobile-Footer">
+    <div className="absolute bg-[#3a2e2a] content-stretch flex flex-col h-[289px] items-center justify-center left-0 px-[36px] py-[80px] w-full" data-name="Mobile-Footer">
       <Frame2 />
     </div>
   );
@@ -499,41 +499,51 @@ function LucideInfinity() {
 
 function BeliefsSec() {
     return (
-        <div className="absolute left-[calc(50%-320px)] top-[1315px] w-[640px] flex flex-col gap-[48px] text-[#3a2e2a]">
+        <div className="max-w-[1111px] flex flex-col gap-[40px] text-[#3a2e2a]">
+            <div className="max-w-[1111px] flex flex-col gap-[48px] text-[#3a2e2a]">
+            <p className="font-['Rangen'] ml-[45%] text-[50px] leading-[60px] tracking-[2px] text-[#3a2e2a]">
+                Our Beliefs.
+            </p>
+            </div>
+
 
             {/* BLOCK 1 */}
-            <div className="flex flex-col gap-[12px]">
-                <p className="font-['Helvetica:Bold',sans-serif] text-[18px] tracking-[1.2px]">
+            <div className="flex flex-col gap-[12px] ml-[25%] w-[641px]">
+                <p className="font-['Helvetica:Bold',sans-serif] font-[700] text-[18px] tracking-[1.2px]">
                     Culture over strategy
                 </p>
                 <p className="font-['Helvetica:Bold',sans-serif] text-[16px] leading-[1.6]">
-                    You can have the best strategy with all the right intentions, but if it doesn't speak the language of culture, it won't move a soul. We decode what matters to your audience. Stories make your brand human.
+                    You can have the best strategy with all the right intentions, but if it doesn't speak the language
+                    of culture, it won't move a soul. We decode what matters to your audience. Stories make your brand
+                    human.
                 </p>
             </div>
 
             {/* BLOCK 2 */}
-            <div className="flex flex-col gap-[12px]">
-                <p className="font-['Helvetica:Bold',sans-serif] text-[18px] tracking-[1.2px]">
+            <div className="flex flex-col gap-[12px] w-[641px] ml-[25%]">
+                <p className="font-['Helvetica:Bold',sans-serif] text-[18px] font-[700] tracking-[1.2px]">
                     Stories make your brand human
                 </p>
                 <p className="font-['Helvetica:Bold',sans-serif] text-[16px] leading-[1.6]">
-                    Stories stick. We craft narratives that make people feel something. Because brands that make you feel become brands you believe in. Every touchpoint is an opportunity to deepen that story.
+                    Stories stick. We craft narratives that make people feel something. Because brands that make you
+                    feel become brands you believe in. Every touchpoint is an opportunity to deepen that story.
                 </p>
             </div>
 
             {/* BLOCK 3 */}
-            <div className="flex flex-col gap-[12px]">
-                <p className="font-['Helvetica:Bold',sans-serif] text-[18px] tracking-[1.2px]">
+            <div className="flex flex-col gap-[12px] w-[641px] ml-[25%]">
+                <p className="font-['Helvetica:Bold',sans-serif] text-[18px] font-[700] tracking-[1.2px]">
                     Think Bigger
                 </p>
                 <p className="font-['Helvetica:Bold',sans-serif] text-[16px] leading-[1.6]">
-                    We don't use limitations as excuses, we treat them as the exact conditions that produce unexpected, genuinely original thinking.
+                    We don't use limitations as excuses, we treat them as the exact conditions that produce unexpected,
+                    genuinely original thinking.
                 </p>
             </div>
 
             {/* ICON */}
-            <div className="pt-[20px]">
-                <LucideInfinity />
+            <div className="ml-[25%]">
+                <LucideInfinity/>
             </div>
 
         </div>
@@ -542,144 +552,100 @@ function BeliefsSec() {
 
 export default function SilentHWebsiteHomeDesktop() {
     return (
-        <div className="bg-[#f1e9da] relative w-full overflow-x-hidden" style={{minHeight: "5161px"}}
-             data-name="Silent H-Website - HOME - Desktop (1280)">
-            {/* Background gradient animations - full width */}
-            <div className="absolute bg-[#f1e9da] h-[4047px] left-0 right-0 opacity-50 overflow-clip top-[700px]" data-name="Component 7">
-        <div className="absolute left-[-196px] size-[663px] top-[-151px]" style={{ animation: 'float-bubble-1 25s ease-in-out infinite' }}>
-          <div className="absolute inset-[-75.41%]">
-            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1663 1663">
-              <g filter="url(#filter0_f_1_266)" id="Ellipse 1">
-                <circle cx="831.5" cy="831.5" fill="var(--fill-0, #E4572E)" r="331.5" />
-              </g>
-              <defs>
-                <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="1663" id="filter0_f_1_266" width="1663" x="0" y="0">
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
-                  <feGaussianBlur result="effect1_foregroundBlur_1_266" stdDeviation="250" />
-                </filter>
-              </defs>
-            </svg>
-          </div>
-        </div>
-        <div className="absolute h-[594px] right-[-200px] top-[-92px] w-[560px]" style={{ animation: 'float-bubble-2 30s ease-in-out infinite' }}>
-          <div className="absolute inset-[-67.34%_-71.43%]">
-            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1360 1394">
-              <g filter="url(#filter0_f_1_268)" id="Ellipse 2">
-                <ellipse cx="680" cy="697" fill="var(--fill-0, #7B8B6F)" rx="280" ry="297" />
-              </g>
-              <defs>
-                <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="1394" id="filter0_f_1_268" width="1360" x="0" y="0">
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
-                  <feGaussianBlur result="effect1_foregroundBlur_1_268" stdDeviation="200" />
-                </filter>
-              </defs>
-            </svg>
-          </div>
-        </div>
-        <div className="absolute left-1/2 -translate-x-1/2 size-[568px] top-[771px]" style={{ animation: 'float-bubble-3 28s ease-in-out infinite' }}>
-          <div className="absolute inset-[-88.03%]">
-            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1568 1568">
-              <g filter="url(#filter0_f_1_253)" id="Ellipse 3">
-                <circle cx="784" cy="784" fill="var(--fill-0, #3A2E2A)" r="284" />
-              </g>
-              <defs>
-                <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="1568" id="filter0_f_1_253" width="1568" x="0" y="0">
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
-                  <feGaussianBlur result="effect1_foregroundBlur_1_253" stdDeviation="250" />
-                </filter>
-              </defs>
-            </svg>
-          </div>
-        </div>
-      </div>
-      
-      {/* Content container - centered but allows full width for hero video */}
-      <div className="relative w-full">
-        <div className="absolute h-[701px] left-0 right-0 top-0">
-          <CoterieVoFinalNew />
-        </div>
+        <div className="bg-[#f1e9da] w-full overflow-x-hidden">
 
-          {/* Centered content wrapper */}
-          <div className="relative w-full max-w-[1280px] mx-auto" style={{height: "5161px"}}>
-              <div
-                  className="absolute top-[866px] left-[2.9%] w-full flex items-start">
+        {/* HERO */}
+            <section className="relative w-full h-[87vh]">
+                <CoterieVoFinalNew />
+            </section>
 
-                  {/* LEFT TEXT */}
-                  <div className="max-w-[420px]">
-                      <p className="font-['Rangen'] text-[50px] leading-[60px] tracking-[2px] text-[#3a2e2a] whitespace-pre-wrap text-left">
-                          {"Storytellers\nStrategists\nOutliers."}
-                      </p>
-                  </div>
+            {/* STORY SECTION */}
+            <section className="max-w-[1280px] mx-auto px-[40px] mt-[160px] mb-[139px] flex items-start">
 
-                  {/* SPACER (controls distance) */}
-                  <div className="w-[430px]" />
+                <div className="max-w-[420px]">
+                    <p className="font-['Rangen'] text-[50px] leading-[60px] tracking-[2px] text-[#3a2e2a] whitespace-pre-wrap">
+                        {"Storytellers\nStrategists\nOutliers."}
+                    </p>
+                </div>
 
-                  {/* RIGHT TEXT */}
-                  <div className="max-w-[520px] flex flex-col gap-[40px] text-left -mt-13">
-                      <p className="font-['Helvetica',sans-serif] text-[16px] font-[400] leading-[1.2] tracking-[1.12px] text-[#3A2E2A]">
-                          We started Notlimited because we believe brands deserve more than marketing. They deserve a
-                          voice that cuts through. A strategy rooted in real culture.
-                      </p>
+                <div className="w-[430px]" />
 
-                      <p className="font-['Helvetica',sans-serif] text-[16px] font-[400] leading-[1.2] tracking-[1.12px] text-[#3A2E2A]">
-                          At our core, we are culture strategists, we are obsessed with how people think, what they care
-                          about, and what moves them. We don't just speak to audiences, we become part of their world.
-                      </p>
+                <div className="max-w-[520px] flex flex-col gap-[40px] -mt-[40px]">
+                    <p className="font-['Helvetica',sans-serif] text-[16px] font-[400] leading-[1.2] tracking-[1.12px] text-[#3A2E2A]">
+                        We started Notlimited because we believe brands deserve more than marketing. They deserve a
+                        voice that cuts through. A strategy rooted in real culture.
+                    </p>
 
-                      <p className="font-['Helvetica',sans-serif] text-[16px] font-[400] leading-[1.2] tracking-[1.12px] text-[#3A2E2A]">
-                          We're the agency for brands ready to stop following the playbook and write their own.
-                      </p>
-                  </div>
+                    <p className="font-['Helvetica',sans-serif] font-[400] text-[16px] font-[400] leading-[1.2] tracking-[1.12px] text-[#3A2E2A]">
+                        At our core, we are culture strategists, we are obsessed with how people think, what they care
+                        about, and what moves them. We don't just speak to audiences, we become part of their world.
+                    </p>
 
-              </div>
+                    <p className="font-['Helvetica',sans-serif] font-[400] text-[16px] font-[400] leading-[1.2] tracking-[1.12px] text-[#3A2E2A]">
+                        We're the agency for brands ready to stop following the playbook and write their own.
+                    </p>
+                </div>
 
-              <div className="absolute h-[408px] left-[calc(35%+49.67px)] rounded-[32px] top-[1215px] w-[367px]">
-                  <p className="font-['Rangen'] text-[50px] leading-[60px] tracking-[2px] text-[#3a2e2a] whitespace-pre-wrap max-w-[420px] text-left">
-                      {"Our Beliefs."}
-                  </p>
-              </div>
-              <ImageGridSection/>
-              <BeliefsSec/>
+            </section>
 
+            {/* BELIEFS TITLE */}
 
-              <div className="absolute top-[3703px] -left-29 w-screen">
-                  <WhatWeDoSection/>
-              </div>
-              <div className="absolute h-[480px] -left-29 top-[4374px] w-screen" data-name="NotLimited-Mickey 1">
-                  <video muted autoPlay className="absolute max-w-none object-cover size-full" controlsList="nodownload" loop
-                         playsInline>
-                      <source src="/NLMICKEY.mp4"/>
-                  </video>
-              </div>
-              <Frame11/>
-              <div className="absolute not-italic text-center top-[4974px] w-full whitespace-pre-wrap">
-              <Affiliates/>
-              </div>
-              {/*<div
-                  className="-translate-x-1/2 absolute left-1/2 not-italic text-center top-[4231px] uppercase w-[754px] whitespace-pre-wrap"
-                  style={{
-                      fontFamily: 'Helvetica',
-                      fontSize: '80px',
-                      fontWeight: 700,
-                      lineHeight: '120%',
-                      letterSpacing: '5.6px',
-                      color: '#7B8B6F'
-                  }}>
-                  <p className="mb-0">OUR JOURNEY</p>
-                  <p>TOGETHER</p>
-              </div>
-              <p className="-translate-x-1/2 absolute font-['Helvetica:Bold',sans-serif] leading-[1.2] left-1/2 not-italic text-[#3a2e2a] text-[32px] text-center top-[4380px] tracking-[2.24px] w-[560px] whitespace-pre-wrap">How
-                  we bring your story to life</p>
-              <Frame15/>
-              <Frame16/>
-              <Frame17/>
-              <Frame18/>*/}
-          </div>
-      </div>
-            <MobileFooter/>
+            {/* BELIEFS CONTENT */}
+            <section className="max-w-[1280px] mx-auto">
+                <BeliefsSec />
+            </section>
+
+            {/* IMAGE GRID */}
+            <section className="mt-[140px] flex justify-center">
+                <div className="w-full max-w-[1140px] grid grid-cols-3 gap-[20px]">
+
+                    {/* row 1 */}
+                    <img src={img1} className="h-[652px] object-cover rounded-[24px]" />
+                    <img src={img2} className="h-[652px] object-cover rounded-[24px]" />
+                    <img src={img3} className="h-[652px] object-cover rounded-[24px]" />
+
+                    {/* feature */}
+                    <img src={img4} className="col-span-3 h-[640px] object-cover rounded-[24px]" />
+
+                    {/* row 3 */}
+                    <img src={img6} className="h-[652px] object-cover rounded-[24px]" />
+                    <img src={img7} className="h-[652px] object-cover rounded-[24px]" />
+                    <img src={img8} className="h-[652px] object-cover rounded-[24px]" />
+
+                    {/* bottom feature */}
+                    <img src={img9} className="col-span-3 h-[640px] object-cover rounded-[24px]" />
+
+                </div>
+            </section>
+
+            {/* WHAT WE DO */}
+            <section className="mt-20">
+                <WhatWeDoSection />
+            </section>
+
+            {/* VIDEO (THIS WAS BREAKING YOUR SCROLL) */}
+            <section className="w-full h-[480px]">
+                <video
+                    muted
+                    autoPlay
+                    loop
+                    playsInline
+                    className="w-full h-full object-cover"
+                >
+                    <source src="/NLMICKEY.mp4" />
+                </video>
+            </section>
+
+            {/* AFFILIATES */}
+            <section className="mt-[120px]">
+                <Affiliates />
+            </section>
+
+            {/* FOOTER */}
+            <footer className="mt-[130px]">
+                <MobileFooter />
+            </footer>
+
         </div>
     );
 }
