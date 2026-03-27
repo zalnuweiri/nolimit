@@ -3,7 +3,7 @@ import Logo from "./Logo";
 import Line4 from "./Line4";
 import imgHeroBackground from "../assets/b88c1766df9500c17fb036b3cfd4047d2efe8cc1.png";
 import banner from "../assets/banner-padded-new.mp4";
-import banner2 from "../assets/banner-hero.mp4";
+import banner2 from "../assets/banner-hero-compressed.mp4";
 import { useState } from "react";
 
 
