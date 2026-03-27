@@ -17,12 +17,22 @@ import CoterieVoFinalNew from "./CoterieVoFinalNew111";
 import BackToTop from "./BackToTop";
 import MobileHero from "./MobileHero";
 import TextLogo from "./TextLogo";
+import MobileAuthors from "../assets/MobileAuthors.png"
 
 function Affiliates() {
     return (
         <div className="relative size-full" data-name="Affiliates">
             <h2 className="font-['Rangen'] text-[#3A2E2A] text-[50px] 2xl:text-[55.4px] leading-[1.2] tracking-[2px] text-center pb-[60px] 2xl:pb-[80px] xl:scale-[1.1]">Our Co-Authors</h2>
             <img src={affiliates} className="w-[681px] 2xl:w-[858px] h-[370.1px] xl:scale-[1.1] 2xl:scale-[1.3] object-contain ml-[20.4%] xl:ml-[27%] 2xl:ml-[28.3%] 2xl:pb-[10px]"/>
+        </div>
+    )
+}
+
+function MobileAffiliates() {
+    return (
+        <div className="relative size-full" data-name="Affiliates">
+            <h2 className="font-['Rangen'] text-[#3A2E2A] text-[40px] leading-[1.2] tracking-[2px] text-center pb-[80px]">Our Co-Authors</h2>
+            <img src={MobileAuthors} className="mt-[180px] w-[681px] h-[370.1px] scale-[2.19] object-contain"/>
         </div>
     )
 }
@@ -129,6 +139,146 @@ function WhatWeDoSection() {
                 </div>
             </div>
         </div>
+    );
+}
+
+function WhatWeDoMobile() {
+    return (
+        <section className="
+            md:hidden
+            min-h-screen
+            w-full
+            bg-[#3a2e2a]
+            px-[24px]
+            py-[80px]
+            flex flex-col
+        ">
+
+            {/* TITLE */}
+            <div className="max-w-[320px] mb-[40px]">
+                <p className="
+                    font-['Rangen']
+                    text-[40px]
+                    leading-[40px]
+                    tracking-[1.6px]
+                    text-[#f1e9da]
+                    items-center
+                    ml-[36px]
+                ">
+                    The things we’re good at
+                </p>
+            </div>
+
+            {/* ITEMS */}
+            <div className="flex flex-col">
+
+                {/* ITEM 1 */}
+                <div className="py-[20px]">
+                    <p className="
+                        font-['Helvetica',sans-serif]
+                        font-[700]
+                        text-[16px]
+                        tracking-[1.2px]
+                        leading-[1.12px]
+                        text-[#f1e9da]
+                        uppercase
+                        mb-[20px]
+                        ml-[36px]
+                    ">
+                        Campaign Strategy & Activation
+                    </p>
+
+                    <p className="
+                        max-w-[270px]
+                        font-['Helvetica',sans-serif]
+                        text-[14px]
+                        font-[400]
+                        tracking-[0.98px]
+                        leading-[1.5]
+                        text-[#f1e9da]
+                        ml-[36px]
+                        mb-[40px]
+                    ">
+                        Culture-led campaigns that create real-world moments. We get people talking and keep them
+                        talking.
+                    </p>
+                    <div className="ml-[38px] w-[84.5%] mt-[32px] h-[1px] opacity-60
+    bg-[linear-gradient(to_right,#f1e9da_0%,#f1e9da_45%,transparent_45%,transparent_75%)]
+    bg-[length:14px_1px] bg-repeat-x"
+                    />
+                </div>
+
+                {/* ITEM 2 */}
+                <div className="py-[20px]">
+                    <p className="ml-[36px] font-['Helvetica'] font-[700] text-[16px] tracking-[1.2px] text-[#f1e9da] uppercase mb-[10px]">
+                        Brand Storytelling & Copywriting
+                    </p>
+
+                    <p className="max-w-[270px]
+                        font-['Helvetica',sans-serif]
+                        text-[14px]
+                        font-[400]
+                        tracking-[0.98px]
+                        leading-[1.5]
+                        text-[#f1e9da]
+                        ml-[36px]
+                        mb-[40px]">
+                        From manifestos to campaign copy to tone of voice, we give your brand a voice people actually
+                        want to hear.
+                    </p>
+                    <div className="ml-[38px] w-[84.5%] mt-[32px] h-[1px] opacity-60
+    bg-[linear-gradient(to_right,#f1e9da_0%,#f1e9da_45%,transparent_45%,transparent_75%)]
+    bg-[length:14px_1px] bg-repeat-x"
+                    />
+                </div>
+
+                {/* ITEM 3 */}
+                <div className="py-[20px]">
+                    <p className="ml-[36px] font-['Helvetica'] font-[700] text-[16px] tracking-[1.2px] text-[#f1e9da] uppercase mb-[10px]">
+                        Content Creation & Direction
+                    </p>
+
+                    <p className="max-w-[270px]
+                        font-['Helvetica',sans-serif]
+                        text-[14px]
+                        font-[400]
+                        tracking-[0.98px]
+                        leading-[1.5]
+                        text-[#f1e9da]
+                        ml-[36px]
+                        mb-[40px]
+                        ">
+                        Content that stops the scroll and starts the conversation. Strategy, creative direction, and
+                        production — end to end.
+                    </p>
+                    <div className="ml-[38px] w-[84.5%] mt-[40px] h-[1px] opacity-60
+    bg-[linear-gradient(to_right,#f1e9da_0%,#f1e9da_45%,transparent_45%,transparent_75%)]
+    bg-[length:14px_1px] bg-repeat-x"
+                    />
+                </div>
+
+                {/* ITEM 4 */}
+                <div className="py-[20px]">
+                    <p className="ml-[36px] font-['Helvetica'] font-[700] text-[16px] tracking-[1.2px] text-[#f1e9da] uppercase mb-[10px]">
+                        Community & Social Strategy
+                    </p>
+
+                    <p className="max-w-[270px]
+                        font-['Helvetica',sans-serif]
+                        text-[14px]
+                        font-[400]
+                        tracking-[0.98px]
+                        leading-[1.5]
+                        text-[#f1e9da]
+                        ml-[36px]
+                        ">
+                        Audiences are built, not bought. We turn followers into fans and fans into advocates.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
     );
 }
 
@@ -562,6 +712,105 @@ function BeliefsSec() {
     );
 }
 
+function BeliefsSecMobile() {
+    return (
+        <section className="
+            md:hidden
+            w-full
+            px-[24px]
+            mt-[120px]
+            mb-[120px]
+            text-[#3a2e2a]
+            flex flex-col
+        ">
+
+            {/* TITLE */}
+            <h2 className="
+                font-['Rangen']
+                text-[42px]
+                leading-[52px]
+                tracking-[1px]
+                mb-[40px]
+            ">
+                Our beliefs.
+            </h2>
+
+            {/* CONTENT BLOCKS */}
+            <div className="flex flex-col gap-[32px] max-w-[340px]">
+
+                {/* BLOCK 1 */}
+                <div className="flex flex-col gap-[12px]">
+                    <p className="
+                        font-['Helvetica',sans-serif]
+                        font-[700]
+                        text-[15px]
+                        tracking-[1.2px]
+                    ">
+                        Culture over strategy
+                    </p>
+
+                    <p className="
+                        font-['Helvetica',sans-serif]
+                        text-[15px]
+                        leading-[1.5]
+                    ">
+                        You can have the best strategy with all the right intentions, but if it doesn't speak the language
+                        of culture, it won't move a soul. We decode what matters to your audience.
+                    </p>
+                </div>
+
+                {/* BLOCK 2 */}
+                <div className="flex flex-col gap-[12px]">
+                    <p className="
+                        font-['Helvetica',sans-serif]
+                        font-[700]
+                        text-[15px]
+                        tracking-[1.2px]
+                    ">
+                        Stories make your brand human
+                    </p>
+
+                    <p className="
+                        font-['Helvetica',sans-serif]
+                        text-[15px]
+                        leading-[1.5]
+                    ">
+                        Stories stick. We craft narratives that make people feel something. Because brands that make you
+                        feel become brands you believe in. Every touchpoint is an opportunity to deepen that story.
+                    </p>
+                </div>
+
+                {/* BLOCK 3 */}
+                <div className="flex flex-col gap-[12px]">
+                    <p className="
+                        font-['Helvetica',sans-serif]
+                        font-[700]
+                        text-[15px]
+                        tracking-[1.2px]
+                    ">
+                        Think Bigger
+                    </p>
+
+                    <p className="
+                        font-['Helvetica',sans-serif]
+                        text-[15px]
+                        leading-[1.5]
+                    ">
+                        We don't use limitations as excuses, we treat them as the exact conditions that produce unexpected,
+                        genuinely original thinking.
+                    </p>
+                </div>
+
+                {/* ICON */}
+                <div className="mt-[16px]">
+                    <LucideInfinity />
+                </div>
+
+            </div>
+        </section>
+    );
+}
+
 export default function SilentHWebsiteHomeDesktop() {
     return (
         <div className="bg-[#f1e9da] w-full overflow-x-hidden relative">
@@ -645,7 +894,7 @@ export default function SilentHWebsiteHomeDesktop() {
 
                 <div className="max-w-[420px] 2xl:max-w-[920px] ">
                     <p className="font-['Rangen'] text-[50px] 2xl:text-[75px] leading-[60px] tracking-[2px] text-[#3a2e2a] whitespace-pre-wrap">
-                        {"Storytellers\nStrategists\nOutliers."}
+                        {"Storytellers.\nStrategists.\nOutliers."}
                     </p>
                 </div>
 
@@ -669,29 +918,68 @@ export default function SilentHWebsiteHomeDesktop() {
 
             </section>
 
-            <section
-                className="md:hidden relative z-10 max-w-[1280px] 2xl:max-w-[1720px] mx-auto px-[40px] mt-[160px] 2xl:mt-[200px] mb-[139px] flex items-start">
+            {/* mobile STORY SECTION */}
 
-                <div className="max-w-[420px] 2xl:max-w-[920px] ">
-                    <p className="font-['Rangen'] text-[50px] 2xl:text-[75px] leading-[60px] tracking-[2px] text-[#3a2e2a] whitespace-pre-wrap">
-                        {"Storytellers\nStrategists\nOutliers."}
+            <section className="
+  md:hidden
+  relative z-10
+  w-full
+  px-[24px]
+  mt-[233px]
+  mb-[120px]
+  flex flex-col
+">
+
+                {/* HEADING */}
+                <div className="max-w-[320px]">
+                    <p className="
+      font-['Rangen']
+      text-[42px]
+      leading-[52px]
+      tracking-[1px]
+      text-[#3a2e2a]
+      whitespace-pre-wrap
+    ">
+                        {"Storytellers.\nStrategists.\nOutliers."}
                     </p>
                 </div>
 
-                <div className="w-[430px] 2xl:w-[700px]"/>
-
-                <div className="max-w-[520px] 2xl:max-w-[806px] flex flex-col gap-[40px] -mt-[40px]">
-                    <p className="font-['Helvetica',sans-serif] text-[16px] 2xl:text-[24px] font-[400] leading-[1.2] tracking-[1.12px] text-[#3A2E2A]">
+                {/* PARAGRAPHS */}
+                <div className="
+    mt-[32px]
+    max-w-[370px]
+    flex flex-col
+    gap-[28px]
+  ">
+                    <p className="
+      font-['Helvetica',sans-serif]
+      text-[16px]
+      leading-[1.5]
+      tracking-[1.12px]
+      text-[#3A2E2A]
+    ">
                         We started Notlimited because we believe brands deserve more than marketing. They deserve a
                         voice that cuts through. A strategy rooted in real culture.
                     </p>
 
-                    <p className="font-['Helvetica',sans-serif] font-[400] text-[16px] 2xl:text-[24px] font-[400] leading-[1.2] tracking-[1.12px] text-[#3A2E2A]">
+                    <p className="
+      font-['Helvetica',sans-serif]
+      text-[16px]
+      leading-[1.5]
+      tracking-[1.12px]
+      text-[#3A2E2A]
+    ">
                         At our core, we are culture strategists, we are obsessed with how people think, what they care
                         about, and what moves them. We don't just speak to audiences, we become part of their world.
                     </p>
 
-                    <p className="font-['Helvetica',sans-serif] font-[400] text-[16px] 2xl:text-[24px] font-[400] leading-[1.2] tracking-[1.12px] text-[#3A2E2A]">
+                    <p className="
+      font-['Helvetica',sans-serif]
+      text-[16px]
+      leading-[1.5]
+      tracking-[1.12px]
+      text-[#3A2E2A]
+    ">
                         We're the agency for brands ready to stop following the playbook and write their own.
                     </p>
                 </div>
@@ -701,12 +989,17 @@ export default function SilentHWebsiteHomeDesktop() {
             {/* BELIEFS TITLE */}
 
             {/* BELIEFS CONTENT */}
-            <section className="relative z-10 max-w-[1280px] mx-auto">
+            <section className="hidden md:block relative z-10 max-w-[1280px] mx-auto">
                 <BeliefsSec/>
             </section>
 
+            <section className="md:hidden relative max-w-[361px] z-10 ml-[8.6%]">
+                <BeliefsSecMobile/>
+            </section>
+
             {/* IMAGE GRID */}
-            <section className="relative z-10 mt-[140px] 2xl:mt-[827px] 2xl:mb-[700px] flex justify-center">
+            <section
+                className="hidden md:block relative z-10 mt-[140px] 2xl:mt-[827px] 2xl:mb-[700px] flex justify-center">
                 <div className="w-full max-w-[1140px] 2xl:scale-[1.5] grid grid-cols-3 gap-[20px]">
 
                     {/* row 1 */}
@@ -728,13 +1021,62 @@ export default function SilentHWebsiteHomeDesktop() {
                 </div>
             </section>
 
+            <section className="md:hidden relative z-10 mt-[120px] flex justify-center">
+
+                <div className="w-full px-[20px] flex flex-col gap-[16px]">
+
+                    {/* 1 */}
+                    <img src={img1} className="w-full h-[570px] object-cover rounded-[20px]"/>
+
+                    {/* 2 */}
+                    <img src={img2} className="w-full h-[570px] object-cover rounded-[20px]"/>
+
+                    {/* 3 */}
+                    <img src={img3} className="w-full h-[570px] object-cover rounded-[20px]"/>
+
+                    {/* 4 (LANDSCAPE) */}
+                    <img src={img4} className="w-full h-[220px] object-cover rounded-[20px]"/>
+
+                    {/* 5 */}
+                    <img src={img6} className="w-full h-[570px] object-cover rounded-[20px]"/>
+
+                    {/* 6 */}
+                    <img src={img7} className="w-full h-[570px] object-cover rounded-[20px]"/>
+
+                    {/* 7 */}
+                    <img src={img8} className="w-full h-[570px] object-cover rounded-[20px]"/>
+
+                    {/* 8 (LANDSCAPE) */}
+                    <img src={img9} className="w-full h-[220px] object-cover rounded-[20px]"/>
+
+                </div>
+
+            </section>
+
             {/* WHAT WE DO */}
-            <section className="mt-20">
+            <section className="hidden md:block mt-[20px] md:mt-20">
                 <WhatWeDoSection/>
             </section>
 
-            {/* VIDEO (THIS WAS BREAKING YOUR SCROLL) */}
-            <section className="w-full h-[480px]">
+            <section className="md:hidden mt-[20px]">
+                <WhatWeDoMobile/>
+            </section>
+
+            {/* Mickey VIDEO */}
+            <section className="hidden md:block w-full h-[480px]">
+                <video
+                    muted
+                    autoPlay
+                    loop
+                    playsInline
+                    className="w-full h-full object-cover"
+                >
+                    <source src="/NLMICKEY.mp4"/>
+                </video>
+            </section>
+
+            {/* Mobile Mickey VIDEO */}
+            <section className="md:hidden w-full h-[331px]">
                 <video
                     muted
                     autoPlay
@@ -747,8 +1089,13 @@ export default function SilentHWebsiteHomeDesktop() {
             </section>
 
             {/* AFFILIATES */}
-            <section className="mt-[120px]">
+            <section className="hidden md:block mt-[120px]">
                 <Affiliates/>
+            </section>
+
+            {/* MOBILE AFFILIATES */}
+            <section className="md:hidden h-[92vh] mt-[80px]">
+                <MobileAffiliates/>
             </section>
 
             {/* FOOTER */}
