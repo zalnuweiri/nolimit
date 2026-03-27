@@ -18,7 +18,7 @@ import BackToTop from "./BackToTop";
 import MobileHero from "./MobileHero";
 import TextLogo from "./TextLogo";
 import MobileAuthors from "../assets/affiliatesmobnew.png";
-import Vid1 from "../assets/Vid1-compressed.mp4";
+import Vid1 from "../assets/Vid1FinalCompress.mp4";
 import Vid2 from "../assets/Vid2-compressed.mp4";
 import Vid3 from "../assets/Vid3-compressed.mp4";
 import Vid4 from "../assets/vid4-compressed.mp4";
