@@ -560,13 +560,13 @@ function Frame18() {
 function Contactus() {
   return (
       <div>
-      <div className="relative z-10 content-stretch flex items-center justify-center px-[16px] py-[15px] mt-[5%] relative shrink-0"
+      <div className="relative z-10 content-stretch flex items-center justify-center xl:items-start xl:justify-start px-[16px] py-[15px] mt-[5%] relative shrink-0"
            data-name="contactus">
           <div aria-hidden="true" className="absolute  inset-0 pointer-events-none"/>
           <p className="relative z-10 font-['Rangen'] font-[400] leading-[1.2] font-normal relative shrink-0 text-[#f1e9da] text-[24px] 2xl:text-[39px] tracking-[0.8px] ">
               {"Contact Us\n"}</p>
       </div>
-          <div className="content-stretch flex items-center justify-center px-[16px] pb-[32px] 2xl:pb-[47px] relative shrink-0"
+          <div className="content-stretch flex items-center justify-center xl:items-start xl:justify-start px-[16px] pb-[32px] 2xl:pb-[47px] relative shrink-0"
                >
           <p className="font-['Helvetica:Regular',sans-serif] leading-[1.2] not-italic relative shrink-0 font-normal font-[400] text-[#f1e9da] text-[16px] 2xl:text-[26px] tracking-[3.2px] uppercase">
               INFO@NOTLIMITED.CA</p>
@@ -623,8 +623,8 @@ function SocialTags() {
 
 function Socials() {
   return (
-    <div className="content-stretch flex flex-col gap-[20px] items-center justify-center relative shrink-0 w-[235px] 2xl:w-[382.5px]">
-      <p className="font-['Rangen'] leading-[1.2] min-w-full not-italic relative shrink-0 text-[#f1e9da] text-[20px] 2xl:text-[32.56px] text-center tracking-[0.8px] w-[min-content] whitespace-pre-wrap">Let's get social</p>
+    <div className="content-stretch flex flex-col gap-[20px] items-center justify-center xl:items-start xl:justify-start relative shrink-0 w-[235px] 2xl:w-[382.5px] xl:ml-[6%] ">
+      <p className="font-['Rangen'] leading-[1.2] min-w-full not-italic relative shrink-0 text-[#f1e9da] text-[20px] 2xl:text-[32.56px] text-center xl:text-start tracking-[0.8px] w-[min-content] whitespace-pre-wrap">Let's get social</p>
       <SocialTags />
     </div>
   );
@@ -632,10 +632,10 @@ function Socials() {
 
 function Cities() {
     return (
-        <div className="flex flex-col items-center gap-[28px] mt-[80px]">
+        <div className="flex flex-col items-center gap-[40px] 2xl:gap-[100px] mt-[80px] xl:text-right xl:items-end">
 
             {/* TORONTO */}
-            <div className="flex flex-col items-center gap-[6px]">
+            <div className="flex flex-col items-center gap-[6px] xl:items-end">
                 <p className="
           font-['Helvetica',sans-serif]
           font-[700]
@@ -644,6 +644,8 @@ function Cities() {
           2xl:text-[26px]
           tracking-[2.8px]
           leading-[16.8px]
+          xl:text-right
+          xl:items-end
         ">
                     Toronto
                 </p>
@@ -656,13 +658,15 @@ function Cities() {
           2xl:text-[22px]
           tracking-[2px]
           leading-[16.8px]
+          xl:text-right
+          xl:items-end
         ">
                     383 Adelaide St West
                 </p>
             </div>
 
             {/* NEW YORK */}
-            <div className="flex flex-col items-center gap-[6px]">
+            <div className="flex flex-col items-center xl:text-right xl:items-end gap-[6px]">
                 <p className="
           font-['Helvetica',sans-serif]
           font-[700]
@@ -671,6 +675,8 @@ function Cities() {
           2xl:text-[26px]
           tracking-[2.8px]
           leading-[16.8px]
+          xl:text-right
+          xl:items-end
         ">
                     New York
                 </p>
@@ -683,6 +689,8 @@ function Cities() {
           2xl:text-[22px]
           leading-[16.8px]
           tracking-[2.8px]
+          xl:text-right
+          xl:items-end
         ">
                     416 West 13th St
                 </p>
@@ -692,11 +700,57 @@ function Cities() {
     );
 }
 
-function Footercontent() {
-  return (
-    <div className="content-stretch flex flex-col gap-[0px] items-center justify-center relative shrink-0 w-[1172px]">
-      <Contactus />
-      <Socials/>
+function FooterContentD() {
+    return (
+        <div className="
+      w-full
+      max-w-[1172px]
+      2xl:max-w-[86.9vw]
+      mx-auto
+
+      flex flex-col
+      xl:flex-row
+
+      items-center
+      xl:items-start
+
+      justify-between
+
+      gap-[60px]
+    ">
+
+            {/* LEFT COLUMN (Contact + Socials stacked) */}
+            <div className="
+        flex flex-col
+        items-start
+        xl:items-start
+        gap-[32px]
+      ">
+                <Contactus />
+                <Socials />
+            </div>
+
+            {/* RIGHT COLUMN (Cities) */}
+            <div className="
+        flex
+        items-end
+        xl:items-end
+        text-right
+        xl:text-right
+      ">
+                <Cities />
+            </div>
+
+        </div>
+    );
+}
+
+function FootercontentM() {
+    return (
+        <div
+            className="content-stretch flex flex-col gap-[0px] items-center justify-center relative shrink-0 w-[1172px]">
+            <Contactus/>
+            <Socials/>
         <Cities />
     </div>
   );
@@ -704,16 +758,26 @@ function Footercontent() {
 
 function Footer() {
   return (
-    <div className="bg-[#3a2e2a] content-stretch flex flex-col h-[50vh] xl:h-[35vh] 2xl:h-[41vh] items-center justify-center left-0 px-[36px] py-[80px] w-full" data-name="Mobile-Footer">
-      <Footercontent />
-    </div>
+      <div>
+          <div
+              className="hidden md:block bg-[#3a2e2a] content-stretch flex flex-col h-[50vh] xl:h-[45vh] 2xl:h-[41vh] items-center justify-center left-0 px-[20px] py-[80px] w-full"
+              data-name="Desktop-Footer">
+              <FooterContentD/>
+          </div>
+          <div
+              className="md:hidden bg-[#3a2e2a] content-stretch flex flex-col h-[50vh] xl:h-[50vh] 2xl:h-[41vh] items-center justify-center left-0 px-[36px] py-[80px] w-full"
+              data-name="Mobile-Footer">
+              <FootercontentM/>
+          </div>
+      </div>
+
   );
 }
 
 function LucideInfinity() {
-  return (
-    <div className="relative shrink-0 size-[24px] 2xl:size-[39px]" data-name="lucide/infinity">
-      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
+    return (
+        <div className="relative shrink-0 size-[24px] 2xl:size-[39px]" data-name="lucide/infinity">
+            <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
         <g id="lucide/infinity">
           <path d={svgPaths.p331bb900} id="Vector" stroke="var(--stroke-0, #3A2E2A)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
         </g>
