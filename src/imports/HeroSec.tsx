@@ -42,8 +42,11 @@ export default function HeroSec() {
                     pointer-events-none
                   "
               >
-                  <source src={banner} type="video/mp4"/>
+                  <source src={banner2} type="video/mp4"/>
               </video>
+
+              {/* Laptops less than xl but not mobile background - full width */}
+
               <video
                   autoPlay
                   muted
