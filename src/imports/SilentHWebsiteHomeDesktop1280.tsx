@@ -890,7 +890,7 @@ export default function SilentHWebsiteHomeDesktop() {
 
             {/* STORY SECTION */}
             <section
-                className="hidden md:block relative z-10 max-w-[1280px] 2xl:max-w-[1720px] mx-auto px-[40px] mt-[160px] 2xl:mt-[200px] mb-[139px] flex items-start">
+                className="hidden md:flex relative z-10 max-w-[1280px] 2xl:max-w-[1720px] mx-auto px-[40px] mt-[160px] 2xl:mt-[200px] mb-[139px] flex items-start">
 
                 <div className="max-w-[420px] 2xl:max-w-[920px] ">
                     <p className="font-['Rangen'] text-[50px] 2xl:text-[75px] leading-[60px] tracking-[2px] text-[#3a2e2a] whitespace-pre-wrap">
@@ -999,7 +999,7 @@ export default function SilentHWebsiteHomeDesktop() {
 
             {/* IMAGE GRID */}
             <section
-                className="hidden md:block relative z-10 mt-[140px] 2xl:mt-[827px] 2xl:mb-[700px] flex justify-center">
+                className="hidden md:flex relative z-10 mt-[140px] 2xl:mt-[827px] 2xl:mb-[700px] flex justify-center">
                 <div className="w-full max-w-[1140px] 2xl:scale-[1.5] grid grid-cols-3 gap-[20px]">
 
                     {/* row 1 */}
