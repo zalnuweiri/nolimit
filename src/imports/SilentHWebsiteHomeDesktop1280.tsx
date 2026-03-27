@@ -1100,7 +1100,7 @@ export default function SilentHWebsiteHomeDesktop() {
                         about, and what moves them. We don't just speak to audiences, we become part of their world.
                     </p>
 
-                    <p className="
+                    <p id="beliefsM" className="
       font-['Helvetica',sans-serif]
       text-[16px]
       leading-[1.5]
@@ -1116,7 +1116,7 @@ export default function SilentHWebsiteHomeDesktop() {
             {/* BELIEFS TITLE */}
 
             {/* BELIEFS CONTENT */}
-            <section className="hidden md:block relative z-10 max-w-[1280px] mx-auto">
+            <section id="beliefs" className="hidden md:block relative z-10 max-w-[1280px] mx-auto">
                 <BeliefsSec/>
             </section>
 
@@ -1181,11 +1181,11 @@ export default function SilentHWebsiteHomeDesktop() {
             </section>
 
             {/* WHAT WE DO */}
-            <section className="hidden md:block mt-[20px] md:mt-20">
+            <section id="services" className="hidden md:block mt-[20px] md:mt-20">
                 <WhatWeDoSection/>
             </section>
 
-            <section className="md:hidden mt-[20px]">
+            <section id="servicesM" className="md:hidden mt-[20px]">
                 <WhatWeDoMobile/>
             </section>
 
@@ -1226,7 +1226,7 @@ export default function SilentHWebsiteHomeDesktop() {
             </section>
 
             {/* FOOTER */}
-            <footer className="mt-[130px]">
+            <footer id="contact" className="mt-[130px]">
                 <Footer/>
             </footer>
 

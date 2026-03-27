@@ -29,7 +29,8 @@ export default function MobileHero() {
                 </video>
             </div>
             {/* MOBILE NAV BAR */}
-            <div className="md:hidden absolute top-0 left-0 w-full h-[72px] bg-[#B64220] z-30 flex items-center justify-between px-[20px]">
+            <div
+                className="md:hidden fixed top-0 left-0 w-full h-[72px] bg-[#B64220] z-50 flex items-center justify-between px-[20px]">
 
                 {/* LOGO */}
                 <div className="w-[36px] h-[36px] flex items-center">
@@ -45,9 +46,9 @@ export default function MobileHero() {
                     <div
                         className="w-[36px] h-[36px] border border-[#F1E9DA] rounded-full flex items-center justify-center">
                         <div className="flex flex-col gap-[4px]">
-                            <div className="w-[14px] h-[2px] bg-[#F1E9DA]" />
-                            <div className="w-[14px] h-[2px] bg-[#F1E9DA]" />
-                            <div className="w-[14px] h-[2px] bg-[#F1E9DA]" />
+                            <div className="w-[14px] h-[2px] bg-[#F1E9DA]"/>
+                            <div className="w-[14px] h-[2px] bg-[#F1E9DA]"/>
+                            <div className="w-[14px] h-[2px] bg-[#F1E9DA]"/>
                         </div>
                     </div>
                 </button>
@@ -57,7 +58,7 @@ export default function MobileHero() {
             <nav className="absolute top-[16px] right-[48px] z-20 flex gap-[32px]">
 
                 <a
-                    href="#beliefs"
+                    href="#beliefsM"
                     className="font-['Helvetica:Bold',sans-serif] text-[14px] tracking-[2.8px] uppercase
                text-[#F1E9DA]
                transition-colors duration-300 ease-out
@@ -67,7 +68,7 @@ export default function MobileHero() {
                 </a>
 
                 <a
-                    href="#services"
+                    href="#servicesM"
                     className="font-['Helvetica:Bold',sans-serif] text-[14px] tracking-[2.8px] uppercase
                text-[#F1E9DA]
                transition-colors duration-300 ease-out
@@ -114,7 +115,7 @@ export default function MobileHero() {
                                     tracking-[3.92px]
                                     uppercase
                                     text-[#F1E9DA]"
-                               href="#beliefs" onClick={() => setMenuOpen(false)}>
+                               href="#beliefsM" onClick={() => setMenuOpen(false)}>
                                 OUR BELIEFS
                             </a>
 
@@ -125,7 +126,7 @@ export default function MobileHero() {
                                     leading-[56px]
                                     tracking-[3.92px]
                                     uppercase
-                                    text-[#F1E9DA]"href="#services" onClick={() => setMenuOpen(false)}>
+                                    text-[#F1E9DA]" href="#servicesM" onClick={() => setMenuOpen(false)}>
                                 SERVICES
                             </a>
 

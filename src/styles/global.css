@@ -58,6 +58,10 @@
 .animate-float-2 { animation: float-2 45s ease-in-out infinite; }
 .animate-float-3 { animation: float-3 38s ease-in-out infinite; }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Optional: responsive scaling for very large screens */
 @media (min-width: 1536px) {
     :root {
