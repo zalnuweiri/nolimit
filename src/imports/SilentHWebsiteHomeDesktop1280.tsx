@@ -26,7 +26,7 @@ import Vid5 from "../assets/vid5-compressed.mp4";
 import Vid6 from "../assets/vid6-compressed.mp4";
 import Vid7 from "../assets/vid7-compressed.mp4";
 import Vid8 from "../assets/vid8-compressed.mp4";*/
-import {useRef, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import { VolumeX, Volume2 } from "lucide-react";
 
 
@@ -911,17 +911,20 @@ function MobileTapVideo({ img, video, className }) {
     const [playing, setPlaying] = useState(false);
     const videoRef = useRef(null);
 
-    const handleTap = () => {
-        if (!videoRef.current) return;
+    useEffect(() => {
+        if (playing && videoRef.current) {
+            videoRef.current.play();
+        }
+    }, [playing]);
 
+    const handleTap = () => {
         if (!playing) {
             setPlaying(true);
-            setTimeout(() => {
-                videoRef.current.play();
-            }, 0);
         } else {
-            videoRef.current.pause();
-            videoRef.current.currentTime = 0;
+            if (videoRef.current) {
+                videoRef.current.pause();
+                videoRef.current.currentTime = 0;
+            }
             setPlaying(false);
         }
     };
@@ -931,7 +934,6 @@ function MobileTapVideo({ img, video, className }) {
             onClick={handleTap}
             className={`relative overflow-hidden rounded-[20px] ${className}`}
         >
-            {/* IMAGE (default state) */}
             {!playing && (
                 <img
                     src={img}
@@ -939,7 +941,6 @@ function MobileTapVideo({ img, video, className }) {
                 />
             )}
 
-            {/* VIDEO (only when tapped) */}
             {playing && (
                 <video
                     ref={videoRef}
