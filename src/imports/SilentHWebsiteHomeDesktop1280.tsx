@@ -1412,15 +1412,15 @@ export default function SilentHWebsiteHomeDesktop() {
 
                 <div className="w-full px-[20px] flex flex-col gap-[16px]">
 
-                    {/* 1 */}
-                    <MobileTapVideo img={img1} video="/vid1.mp4" className="h-[570px]" />
-                    <MobileTapVideo img={img2} video="/vid2.mp4" className="h-[570px]" />
-                    <MobileTapVideo img={img3} video="/vid3.mp4" className="h-[570px]" />
-                    <MobileTapVideo img={img4} video="/vid4.mp4" className="h-[220px]" />
-                    <MobileTapVideo img={img6} video="/vid5.mp4" className="h-[570px]" />
-                    <MobileTapVideo img={img7} video="/vid6.mp4" className="h-[570px]" />
-                    <MobileTapVideo img={img8} video="/vid7.mp4" className="h-[570px]" />
-                    <MobileTapVideo img={img9} video="/vid8.mp4" className="h-[220px]" />
+                    {/* Vids/Imgs */}
+                    <MobileTapVideo img={img1} video="/Vid1FinalCompress.mp4" className="h-[570px]" />
+                    <MobileTapVideo img={img2} video="/Vid2-compressed.mp4" className="h-[570px]" />
+                    <MobileTapVideo img={img3} video="/Vid3-compressed.mp4" className="h-[570px]" />
+                    <MobileTapVideo img={img4} video="/vid4-compressed.mp4" className="h-[220px]" />
+                    <MobileTapVideo img={img6} video="/vid5-compressed.mp4" className="h-[570px]" />
+                    <MobileTapVideo img={img7} video="/vid6-compressed.mp4" className="h-[570px]" />
+                    <MobileTapVideo img={img8} video="/vid7-compressed.mp4" className="h-[570px]" />
+                    <MobileTapVideo img={img9} video="/vid8-compressed.mp4" className="h-[220px]" />
 
                 </div>
 
