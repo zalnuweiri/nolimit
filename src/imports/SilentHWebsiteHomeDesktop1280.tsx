@@ -989,24 +989,26 @@ function BeliefsSecMobile() {
             {/* TITLE */}
             <h2 className="
                 font-['Rangen']
-                text-[42px]
-                leading-[52px]
-                tracking-[1px]
+              text-[42px]
+              leading-[52px]
+              tracking-[1px]
+              whitespace-pre-wrap
                 mb-[40px]
             ">
                 Our beliefs.
             </h2>
 
             {/* CONTENT BLOCKS */}
-            <div className="flex flex-col gap-[32px] max-w-[340px]">
+            <div className="flex flex-col gap-[32px] max-w-[400px]">
 
                 {/* BLOCK 1 */}
-                <div className="flex flex-col gap-[12px]">
+                <div className="flex flex-col gap-[12px] w-[340px]">
                     <p className="
                         font-['Helvetica',sans-serif]
                         font-[700]
                         text-[15px]
                         tracking-[1.2px]
+                        leading-tight
                     ">
                         Culture over strategy
                     </p>
@@ -1015,6 +1017,8 @@ function BeliefsSecMobile() {
                         font-['Helvetica',sans-serif]
                         text-[15px]
                         leading-[1.5]
+                        font-[400]
+                        leading-tight
                     ">
                         You can have the best strategy with all the right intentions, but if it doesn't speak the language
                         of culture, it won't move a soul. We decode what matters to your audience.
@@ -1022,7 +1026,7 @@ function BeliefsSecMobile() {
                 </div>
 
                 {/* BLOCK 2 */}
-                <div className="flex flex-col gap-[12px]">
+                <div className="flex flex-col gap-[12px] w-[340px]">
                     <p className="
                         font-['Helvetica',sans-serif]
                         font-[700]
@@ -1043,7 +1047,7 @@ function BeliefsSecMobile() {
                 </div>
 
                 {/* BLOCK 3 */}
-                <div className="flex flex-col gap-[12px]">
+                <div className="flex flex-col gap-[12px] w-[340px]">
                     <p className="
                         font-['Helvetica',sans-serif]
                         font-[700]
@@ -1322,7 +1326,7 @@ export default function SilentHWebsiteHomeDesktop() {
                 <BeliefsSec/>
             </section>
 
-            <section className="md:hidden relative max-w-[361px] z-10 ml-[8.6%]">
+            <section className="md:hidden relative max-w-[361px] z-10 ml-[0%]">
                 <BeliefsSecMobile/>
             </section>
 
