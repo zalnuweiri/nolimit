@@ -909,13 +909,15 @@ function HoverVideo({ img, video, className }) {
 
 function MobileTapVideo({ img, video, className }) {
     const [playing, setPlaying] = useState(false);
+    const [muted, setMuted] = useState(true);
     const videoRef = useRef(null);
 
     useEffect(() => {
         if (playing && videoRef.current) {
+            videoRef.current.muted = muted;
             videoRef.current.play();
         }
-    }, [playing]);
+    }, [playing, muted]);
 
     const handleTap = () => {
         if (!playing) {
@@ -929,11 +931,23 @@ function MobileTapVideo({ img, video, className }) {
         }
     };
 
+    const toggleMute = (e) => {
+        e.stopPropagation(); // 🔑 prevents triggering play/pause
+        setMuted((prev) => {
+            const newMuted = !prev;
+            if (videoRef.current) {
+                videoRef.current.muted = newMuted;
+            }
+            return newMuted;
+        });
+    };
+
     return (
         <div
             onClick={handleTap}
             className={`relative overflow-hidden rounded-[20px] ${className}`}
         >
+            {/* IMAGE */}
             {!playing && (
                 <img
                     src={img}
@@ -941,17 +955,40 @@ function MobileTapVideo({ img, video, className }) {
                 />
             )}
 
+            {/* VIDEO */}
             {playing && (
                 <video
                     ref={videoRef}
-                    muted
+                    muted={muted}
                     playsInline
                     loop
-                    preload="metadata"
+                    preload="auto"
                     className="w-full h-full object-cover"
                 >
                     <source src={video} type="video/mp4" />
                 </video>
+            )}
+
+            {/* 🔊 MUTE BUTTON */}
+            {playing && (
+                <button
+                    onClick={toggleMute}
+                    className="
+                        absolute bottom-[12px] right-[12px]
+                        w-[36px] h-[36px]
+                        bg-black/40 backdrop-blur-sm
+                        border border-white/30
+                        rounded-full
+                        flex items-center justify-center
+                        text-[#F1E9DA]
+                    "
+                >
+                    {muted ? (
+                        <VolumeX size={16} strokeWidth={2} />
+                    ) : (
+                        <Volume2 size={16} strokeWidth={2} />
+                    )}
+                </button>
             )}
         </div>
     );
