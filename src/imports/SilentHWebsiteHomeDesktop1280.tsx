@@ -18,14 +18,14 @@ import BackToTop from "./BackToTop";
 import MobileHero from "./MobileHero";
 import TextLogo from "./TextLogo";
 import MobileAuthors from "../assets/AffiliatesMobNew.png";
-import Vid1 from "../assets/Vid1FinalCompress.mp4";
+/*import Vid1 from "../assets/Vid1FinalCompress.mp4";
 import Vid2 from "../assets/Vid2-compressed.mp4";
 import Vid3 from "../assets/Vid3-compressed.mp4";
 import Vid4 from "../assets/vid4-compressed.mp4";
 import Vid5 from "../assets/vid5-compressed.mp4";
 import Vid6 from "../assets/vid6-compressed.mp4";
 import Vid7 from "../assets/vid7-compressed.mp4";
-import Vid8 from "../assets/vid8-compressed.mp4";
+import Vid8 from "../assets/vid8-compressed.mp4";*/
 import {useRef, useState} from "react";
 import { VolumeX, Volume2 } from "lucide-react";
 
@@ -835,7 +835,6 @@ function HoverVideo({ img, video, className }) {
     const videoRef = useRef(null);
     const [muted, setMuted] = useState(true);
     const isMobile = window.innerWidth < 768;
-    const [loaded, setLoaded] = useState(false);
 
     const toggleMute = (e) => {
         e.stopPropagation(); // prevent hover conflicts
@@ -852,7 +851,6 @@ function HoverVideo({ img, video, className }) {
         <div
             className={`relative overflow-hidden rounded-[24px] group ${className}`}
             onMouseEnter={() => {
-                setLoaded(true);
                 videoRef.current?.play();
             }}
             onMouseLeave={() => {
@@ -868,13 +866,13 @@ function HoverVideo({ img, video, className }) {
             />
 
             {/* VIDEO */}
-            {!isMobile && loaded && (
+            {!isMobile && (
             <video
                 ref={videoRef}
                 muted={muted}
                 loop
                 playsInline
-                preload="none"
+                preload="metadata"
                 className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
                 <source src={video} type="video/mp4"/>
@@ -882,7 +880,7 @@ function HoverVideo({ img, video, className }) {
             )}
 
             {/* 🔊 MUTE BUTTON */}
-            {!isMobile && loaded && (
+            {!isMobile && (
 
                 <button
                 onClick={toggleMute}
@@ -1336,20 +1334,20 @@ export default function SilentHWebsiteHomeDesktop() {
                 <div className="w-full max-w-[1140px] 2xl:scale-[1.5] grid grid-cols-3 gap-[20px]">
 
                     {/* row 1 */}
-                    <HoverVideo img={img1} video={Vid1} className="h-[652px]"/>
-                    <HoverVideo img={img2} video={Vid2} className="h-[652px]"/>
-                    <HoverVideo img={img3} video={Vid3} className="h-[652px]"/>
+                    <HoverVideo img={img1} video="/Vid1FinalCompress.mp4" className="h-[652px]"/>
+                    <HoverVideo img={img2} video="/Vid2-compressed.mp4" className="h-[652px]"/>
+                    <HoverVideo img={img3} video="/Vid3-compressed.mp4" className="h-[652px]"/>
 
                     {/* feature */}
-                    <HoverVideo img={img4} video={Vid4} className="col-span-3 h-[640px]"/>
+                    <HoverVideo img={img4} video="/Vid4-compressed.mp4" className="col-span-3 h-[640px]"/>
 
                     {/* row 3 */}
-                    <HoverVideo img={img6} video={Vid5} className="h-[652px]"/>
-                    <HoverVideo img={img7} video={Vid6} className="h-[652px]"/>
-                    <HoverVideo img={img8} video={Vid7} className="h-[652px]"/>
+                    <HoverVideo img={img6} video="/Vid5-compressed.mp4" className="h-[652px]"/>
+                    <HoverVideo img={img7} video="/Vid6-compressed.mp4" className="h-[652px]"/>
+                    <HoverVideo img={img8} video="/Vid7-compressed.mp4" className="h-[652px]"/>
 
                     {/* bottom feature */}
-                    <HoverVideo img={img9} video={Vid8} className="col-span-3 h-[640px]"/>
+                    <HoverVideo img={img9} video="/Vid8-compressed.mp4" className="col-span-3 h-[640px]"/>
 
                 </div>
             </section>
