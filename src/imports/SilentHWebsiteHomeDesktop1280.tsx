@@ -1124,7 +1124,7 @@ export default function SilentHWebsiteHomeDesktop() {
             </div>
 
             {/* Background gradient animations - Mobile only */}
-            <div className="md:hidden fixed left-0 right-0 top-0 z-0 pointer-events-none overflow-hidden h-screen">
+            <div className="md:hidden absolute left-0 right-0 top-[90vh] z-0 pointer-events-none">
                 <div
                     className="absolute left-[-80px] top-[40px] size-[280px]"
                     style={{animation: 'float-bubble-mobile-1 12s linear infinite'}}
