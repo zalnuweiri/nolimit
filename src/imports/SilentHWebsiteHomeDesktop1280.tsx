@@ -1408,7 +1408,7 @@ export default function SilentHWebsiteHomeDesktop() {
             </section>
 
             {/* MOBILE AFFILIATES */}
-            <section className="md:hidden h-[100vh] mt-[80px]">
+            <section className="md:hidden h-[125vh] mt-[80px]">
                 <MobileAffiliates/>
             </section>
 
