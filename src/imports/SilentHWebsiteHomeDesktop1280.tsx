@@ -1080,7 +1080,7 @@ export default function SilentHWebsiteHomeDesktop() {
         <div className="bg-[#F1E9DA] w-full overflow-x-hidden relative">
             {/* Background gradient animations - Desktop only */}
             <div
-                className="hidden md:block z-0 absolute bg-[#f1e9da] h-[4047px] left-0 right-0 overflow-clip top-[700px]"
+                className="hidden md:block z-0 absolute bg-[#f1e9da] h-[4047px] left-0 right-0 overflow-clip lg:top-[500px] xl:top-[700px]"
                 data-name="Component 7">
                 <div className="absolute left-[-196px] size-[663px] top-[-151px]"
                      style={{animation: 'float-bubble-1 25s ease-in-out infinite'}}>
