@@ -42,7 +42,7 @@ export default function HeroSec() {
                     pointer-events-none
                   "
               >
-                  <source src="/newbg-optimized.mp4" type="video/mp4"/>
+                  <source src="/newbg-optimized2.mp4" type="video/mp4"/>
               </video>
 
           </div>
