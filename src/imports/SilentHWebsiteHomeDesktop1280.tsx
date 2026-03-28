@@ -190,6 +190,7 @@ function WhatWeDoMobile() {
             px-[24px]
             py-[80px]
             flex flex-col
+            z-30
         ">
 
             {/* TITLE */}
@@ -1123,8 +1124,8 @@ export default function SilentHWebsiteHomeDesktop() {
                 </div>
             </div>
 
-            {/* Background gradient animations - Mobile only */}
-            <div className="md:hidden absolute left-0 right-0 top-[90vh] z-0 pointer-events-none">
+            {/* Background gradient animations - Mobile only 
+            <div className="md:hidden fixed inset-0 z-0 pointer-events-none overflow-hidden">
                 <div
                     className="absolute left-[-80px] top-[40px] size-[280px]"
                     style={{animation: 'float-bubble-mobile-1 12s linear infinite'}}
@@ -1187,7 +1188,7 @@ export default function SilentHWebsiteHomeDesktop() {
                         </svg>
                     </div>
                 </div>
-            </div>
+            </div>*/}
 
             {/* HERO */}
             <section className="relative w-full h-[87vh] hidden md:block">
@@ -1372,7 +1373,7 @@ export default function SilentHWebsiteHomeDesktop() {
                 <WhatWeDoSection/>
             </section>
 
-            <section id="servicesM" className="md:hidden mt-[20px]">
+            <section id="servicesM" className="md:hidden mt-[20px] z-30">
                 <WhatWeDoMobile/>
             </section>
 
