@@ -17,7 +17,7 @@ import HeroSec from "./HeroSec";
 import BackToTop from "./BackToTop";
 import MobileHero from "./MobileHero";
 import TextLogo from "./TextLogo";
-import MobileAuthors from "../assets/affiliatesmobnew.png";
+import MobileAuthors from "../assets/AffiliatesMobNew.png";
 import Vid1 from "../assets/Vid1FinalCompress.mp4";
 import Vid2 from "../assets/Vid2-compressed.mp4";
 import Vid3 from "../assets/Vid3-compressed.mp4";
@@ -1060,7 +1060,7 @@ function BeliefsSecMobile() {
 
 export default function SilentHWebsiteHomeDesktop() {
     return (
-        <div className="bg-[#f1e9da] w-full overflow-x-hidden relative">
+        <div className="bg-[#F1E9DA] w-full overflow-x-hidden relative">
             {/* Background gradient animations - Desktop only */}
             <div
                 className="hidden md:block z-0 absolute bg-[#f1e9da] h-[4047px] left-0 right-0 overflow-clip top-[700px]"
@@ -1408,7 +1408,7 @@ export default function SilentHWebsiteHomeDesktop() {
             </section>
 
             {/* MOBILE AFFILIATES */}
-            <section className="md:hidden h-[92vh] mt-[80px]">
+            <section className="md:hidden h-[100vh] mt-[80px]">
                 <MobileAffiliates/>
             </section>
 
