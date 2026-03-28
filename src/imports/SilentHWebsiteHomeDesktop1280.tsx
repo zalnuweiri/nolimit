@@ -907,6 +907,55 @@ function HoverVideo({ img, video, className }) {
     );
 }
 
+function MobileTapVideo({ img, video, className }) {
+    const [playing, setPlaying] = useState(false);
+    const videoRef = useRef(null);
+
+    const handleTap = () => {
+        if (!videoRef.current) return;
+
+        if (!playing) {
+            setPlaying(true);
+            setTimeout(() => {
+                videoRef.current.play();
+            }, 0);
+        } else {
+            videoRef.current.pause();
+            videoRef.current.currentTime = 0;
+            setPlaying(false);
+        }
+    };
+
+    return (
+        <div
+            onClick={handleTap}
+            className={`relative overflow-hidden rounded-[20px] ${className}`}
+        >
+            {/* IMAGE (default state) */}
+            {!playing && (
+                <img
+                    src={img}
+                    className="w-full h-full object-cover"
+                />
+            )}
+
+            {/* VIDEO (only when tapped) */}
+            {playing && (
+                <video
+                    ref={videoRef}
+                    muted
+                    playsInline
+                    loop
+                    preload="metadata"
+                    className="w-full h-full object-cover"
+                >
+                    <source src={video} type="video/mp4" />
+                </video>
+            )}
+        </div>
+    );
+}
+
 function LucideInfinity() {
     return (
         <div className="relative shrink-0 size-[24px] 2xl:size-[39px]" data-name="lucide/infinity">
@@ -1208,7 +1257,7 @@ export default function SilentHWebsiteHomeDesktop() {
 
             {/* HERO */}
             <section className="relative w-full h-[87vh] hidden md:block">
-            <HeroSec/>
+                <HeroSec/>
 
             </section>
 
@@ -1328,7 +1377,7 @@ export default function SilentHWebsiteHomeDesktop() {
                 <BeliefsSecMobile/>
             </section>
 
-            {/* IMAGE GRID */}
+            {/* IMAGE GRID Desktop */}
             <section
                 className="hidden md:flex relative z-10 mt-[140px] 2xl:mt-[827px] 2xl:mb-[700px] flex justify-center">
                 <div className="w-full max-w-[1140px] 2xl:scale-[1.5] grid grid-cols-3 gap-[20px]">
@@ -1352,33 +1401,26 @@ export default function SilentHWebsiteHomeDesktop() {
                 </div>
             </section>
 
-            <section className="md:hidden relative z-10 mt-[120px] flex justify-center">
+
+            <div className="md:hidden mb-3 text-sm text-gray-500 flex items-center gap-2 px-[24px]">
+                <span className="inline-block w-2 h-2 rounded-full bg-gray-400"/>
+                Tap Image to play
+            </div>
+
+            {/* IMAGE GRID Mobile */}
+            <section className="md:hidden relative z-10 flex justify-center">
 
                 <div className="w-full px-[20px] flex flex-col gap-[16px]">
 
                     {/* 1 */}
-                    <img src={img1} className="w-full h-[570px] object-cover rounded-[20px]"/>
-
-                    {/* 2 */}
-                    <img src={img2} className="w-full h-[570px] object-cover rounded-[20px]"/>
-
-                    {/* 3 */}
-                    <img src={img3} className="w-full h-[570px] object-cover rounded-[20px]"/>
-
-                    {/* 4 (LANDSCAPE) */}
-                    <img src={img4} className="w-full h-[220px] object-cover rounded-[20px]"/>
-
-                    {/* 5 */}
-                    <img src={img6} className="w-full h-[570px] object-cover rounded-[20px]"/>
-
-                    {/* 6 */}
-                    <img src={img7} className="w-full h-[570px] object-cover rounded-[20px]"/>
-
-                    {/* 7 */}
-                    <img src={img8} className="w-full h-[570px] object-cover rounded-[20px]"/>
-
-                    {/* 8 (LANDSCAPE) */}
-                    <img src={img9} className="w-full h-[220px] object-cover rounded-[20px]"/>
+                    <MobileTapVideo img={img1} video="/vid1.mp4" className="h-[570px]" />
+                    <MobileTapVideo img={img2} video="/vid2.mp4" className="h-[570px]" />
+                    <MobileTapVideo img={img3} video="/vid3.mp4" className="h-[570px]" />
+                    <MobileTapVideo img={img4} video="/vid4.mp4" className="h-[220px]" />
+                    <MobileTapVideo img={img6} video="/vid5.mp4" className="h-[570px]" />
+                    <MobileTapVideo img={img7} video="/vid6.mp4" className="h-[570px]" />
+                    <MobileTapVideo img={img8} video="/vid7.mp4" className="h-[570px]" />
+                    <MobileTapVideo img={img9} video="/vid8.mp4" className="h-[220px]" />
 
                 </div>
 
