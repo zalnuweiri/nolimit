@@ -822,7 +822,7 @@ function Footer() {
               <FooterContentD/>
           </div>
           <div
-              className="md:hidden bg-[#3a2e2a] content-stretch flex flex-col h-[55vh] xl:h-[50vh] 2xl:h-[41vh] items-center justify-center left-0 px-[36px] py-[80px] w-full"
+              className="md:hidden bg-[#3a2e2a] content-stretch flex flex-col h-[65vh] xl:h-[50vh] 2xl:h-[41vh] items-center justify-center left-0 px-[36px] py-[80px] w-full"
               data-name="Mobile-Footer">
               <FootercontentM/>
           </div>
