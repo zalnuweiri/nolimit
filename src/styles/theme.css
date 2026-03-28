@@ -1,5 +1,31 @@
 @custom-variant dark (&:is(.dark *));
 
+
+@keyframes float-bubble-mobile-1 {
+  0%   { transform: translate(0, 0); }                  /* top-left */
+  20%  { transform: translate(120px, 220px); }          /* bottom-right */
+  40%  { transform: translate(-80px, 300px); }          /* bottom-left */
+  65%  { transform: translate(100px, 180px); }          /* mid-right */
+  85%  { transform: translate(140px, 60px); }           /* upper-right */
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes float-bubble-mobile-2 {
+  0%   { transform: translate(0, 0); }                  /* top-right */
+  25%  { transform: translate(-60px, 140px); }          /* mid */
+  50%  { transform: translate(40px, 300px); }           /* bottom-right */
+  75%  { transform: translate(-120px, 180px); }         /* mid-left */
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes float-bubble-mobile-3 {
+  0%   { transform: translate(-50%, 0); }               /* centered */
+  25%  { transform: translate(calc(-50% - 40px), 180px); }
+  50%  { transform: translate(calc(-50% + 20px), 320px); }
+  75%  { transform: translate(calc(-50% + 60px), 120px); }
+  100% { transform: translate(-50%, 0); }
+}
+
 /* Lava lamp breathing animations - large movements across the screen */
 @keyframes float-bubble-1 {
   0% {

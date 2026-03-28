@@ -1045,9 +1045,10 @@ function BeliefsSecMobile() {
 export default function SilentHWebsiteHomeDesktop() {
     return (
         <div className="bg-[#f1e9da] w-full overflow-x-hidden relative">
-            {/* Background gradient animations - full width */}
-            <div className="z-0 absolute bg-[#f1e9da] h-[4047px] left-0 right-0 overflow-clip top-[700px]"
-                 data-name="Component 7">
+            {/* Background gradient animations - Desktop only */}
+            <div
+                className="hidden md:block z-0 absolute bg-[#f1e9da] h-[4047px] left-0 right-0 overflow-clip top-[700px]"
+                data-name="Component 7">
                 <div className="absolute left-[-196px] size-[663px] top-[-151px]"
                      style={{animation: 'float-bubble-1 25s ease-in-out infinite'}}>
                     <div className="absolute inset-[-75.41%]">
@@ -1106,9 +1107,75 @@ export default function SilentHWebsiteHomeDesktop() {
                 </div>
             </div>
 
+            {/* Background gradient animations - Mobile only */}
+            <div className="md:hidden absolute left-0 right-0 top-[90vh] z-0 pointer-events-none">
+                <div
+                    className="absolute left-[-80px] top-[40px] size-[280px]"
+                    style={{animation: 'float-bubble-mobile-1 12s linear infinite'}}
+                >
+                    <div className="absolute inset-[-75.41%]">
+                        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1663 1663">
+                            <g filter="url(#filter0_f_1_266)" id="Ellipse 1">
+                                <circle cx="831.5" cy="831.5" fill="var(--fill-0, #E4572E)" r="331.5"
+                                        fillOpacity="0.5"/>
+                            </g>
+                            <defs>
+                                <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="1663"
+                                        id="filter0_f_1_266" width="1663" x="0" y="0">
+                                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                                    <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape"/>
+                                    <feGaussianBlur result="effect1_foregroundBlur_1_266" stdDeviation="250"/>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div
+                    className="absolute right-[-100px] top-[150px] w-[260px] h-[300px]"
+                    style={{animation: 'float-bubble-mobile-2 14s linear infinite'}}
+                >
+                    <div className="absolute inset-[-67.34%_-71.43%]">
+                        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1360 1394">
+                            <g filter="url(#filter0_f_1_268)" id="Ellipse 2">
+                                <ellipse cx="680" cy="697" fill="var(--fill-0, #7B8B6F)" rx="280" ry="297"
+                                         fillOpacity="0.5"/>
+                            </g>
+                            <defs>
+                                <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="1394"
+                                        id="filter0_f_1_268" width="1360" x="0" y="0">
+                                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                                    <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape"/>
+                                    <feGaussianBlur result="effect1_foregroundBlur_1_268" stdDeviation="200"/>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div
+                    className="absolute left-1/2 -translate-x-1/2 top-[350px] size-[240px]"
+                    style={{animation: 'float-bubble-mobile-3 13s linear infinite'}}
+                >
+                    <div className="absolute inset-[-88.03%]">
+                        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1568 1568">
+                            <g filter="url(#filter0_f_1_253)" id="Ellipse 3">
+                                <circle cx="784" cy="784" fill="var(--fill-0, #3A2E2A)" r="284" fillOpacity="0.5"/>
+                            </g>
+                            <defs>
+                                <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="1568"
+                                        id="filter0_f_1_253" width="1568" x="0" y="0">
+                                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                                    <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape"/>
+                                    <feGaussianBlur result="effect1_foregroundBlur_1_253" stdDeviation="250"/>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
             {/* HERO */}
             <section className="relative w-full h-[87vh] hidden md:block">
-                <HeroSec/>
+            <HeroSec/>
 
             </section>
 
@@ -1234,20 +1301,20 @@ export default function SilentHWebsiteHomeDesktop() {
                 <div className="w-full max-w-[1140px] 2xl:scale-[1.5] grid grid-cols-3 gap-[20px]">
 
                     {/* row 1 */}
-                    <HoverVideo img={img1} video={Vid1} className="h-[652px]" />
-                    <HoverVideo img={img2} video={Vid2} className="h-[652px]" />
-                    <HoverVideo img={img3} video={Vid3} className="h-[652px]" />
+                    <HoverVideo img={img1} video={Vid1} className="h-[652px]"/>
+                    <HoverVideo img={img2} video={Vid2} className="h-[652px]"/>
+                    <HoverVideo img={img3} video={Vid3} className="h-[652px]"/>
 
                     {/* feature */}
-                    <HoverVideo img={img4} video={Vid4} className="col-span-3 h-[640px]" />
+                    <HoverVideo img={img4} video={Vid4} className="col-span-3 h-[640px]"/>
 
                     {/* row 3 */}
-                    <HoverVideo img={img6} video={Vid5} className="h-[652px]" />
-                    <HoverVideo img={img7} video={Vid6} className="h-[652px]" />
-                    <HoverVideo img={img8} video={Vid7} className="h-[652px]" />
+                    <HoverVideo img={img6} video={Vid5} className="h-[652px]"/>
+                    <HoverVideo img={img7} video={Vid6} className="h-[652px]"/>
+                    <HoverVideo img={img8} video={Vid7} className="h-[652px]"/>
 
                     {/* bottom feature */}
-                    <HoverVideo img={img9} video={Vid8} className="col-span-3 h-[640px]" />
+                    <HoverVideo img={img9} video={Vid8} className="col-span-3 h-[640px]"/>
 
                 </div>
             </section>
