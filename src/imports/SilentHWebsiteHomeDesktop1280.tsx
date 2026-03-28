@@ -834,6 +834,8 @@ function Footer() {
 function HoverVideo({ img, video, className }) {
     const videoRef = useRef(null);
     const [muted, setMuted] = useState(true);
+    const isMobile = window.innerWidth < 768;
+    const [loaded, setLoaded] = useState(false);
 
     const toggleMute = (e) => {
         e.stopPropagation(); // prevent hover conflicts
@@ -849,7 +851,10 @@ function HoverVideo({ img, video, className }) {
     return (
         <div
             className={`relative overflow-hidden rounded-[24px] group ${className}`}
-            onMouseEnter={() => videoRef.current?.play()}
+            onMouseEnter={() => {
+                setLoaded(true);
+                videoRef.current?.play();
+            }}
             onMouseLeave={() => {
                 videoRef.current?.pause();
                 videoRef.current.currentTime = 0;
@@ -858,22 +863,28 @@ function HoverVideo({ img, video, className }) {
             {/* IMAGE */}
             <img
                 src={img}
+                loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
             />
 
             {/* VIDEO */}
+            {!isMobile && loaded && (
             <video
                 ref={videoRef}
                 muted={muted}
                 loop
                 playsInline
+                preload="none"
                 className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
-                <source src={video} type="video/mp4" />
+                <source src={video} type="video/mp4"/>
             </video>
+            )}
 
             {/* 🔊 MUTE BUTTON */}
-            <button
+            {!isMobile && loaded && (
+
+                <button
                 onClick={toggleMute}
                 className="
                     absolute bottom-[12px] right-[12px]
@@ -888,11 +899,12 @@ function HoverVideo({ img, video, className }) {
                 "
             >
                 {muted ? (
-                    <VolumeX size={16} strokeWidth={2} />
+                    <VolumeX size={16} strokeWidth={2}/>
                 ) : (
-                    <Volume2 size={16} strokeWidth={2} />
+                    <Volume2 size={16} strokeWidth={2}/>
                 )}
             </button>
+                )}
         </div>
     );
 }
@@ -901,8 +913,8 @@ function LucideInfinity() {
     return (
         <div className="relative shrink-0 size-[24px] 2xl:size-[39px]" data-name="lucide/infinity">
             <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
-        <g id="lucide/infinity">
-          <path d={svgPaths.p331bb900} id="Vector" stroke="var(--stroke-0, #3A2E2A)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
+                <g id="lucide/infinity">
+                    <path d={svgPaths.p331bb900} id="Vector" stroke="var(--stroke-0, #3A2E2A)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
         </g>
       </svg>
     </div>
