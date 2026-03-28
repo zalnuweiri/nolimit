@@ -213,6 +213,7 @@ function WhatWeDoMobile() {
                 {/* ITEM 1 */}
                 <div className="py-[20px]">
                     <p className="
+                        max-w-[370px]
                         font-['Helvetica',sans-serif]
                         font-[700]
                         text-[16px]
