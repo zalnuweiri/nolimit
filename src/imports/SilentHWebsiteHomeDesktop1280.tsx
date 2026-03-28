@@ -1440,8 +1440,8 @@ export default function SilentHWebsiteHomeDesktop() {
             </section>
 
 
-            <div className="md:hidden mb-3 text-sm text-gray-500 flex items-center gap-2 px-[24px]">
-                <span className="inline-block w-2 h-2 rounded-full bg-gray-400"/>
+            <div className="md:hidden mb-3 text-sm text-[#B64220] flex items-center gap-2 px-[24px]">
+                <span className="inline-block w-2 h-2 rounded-full bg-[#B64220] "/>
                 Tap Image to play
             </div>
 
