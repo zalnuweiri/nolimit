@@ -61,40 +61,6 @@ export default function MobileHero() {
 
             </div>
 
-            <nav className="absolute top-[16px] right-[48px] z-20 flex gap-[32px]">
-
-                <a
-                    href="#beliefsM"
-                    className="font-['Helvetica:Bold',sans-serif] text-[14px] tracking-[2.8px] uppercase
-               text-[#F1E9DA]
-               transition-colors duration-300 ease-out
-               hover:text-[#B64220]"
-                >
-                    our beliefs
-                </a>
-
-                <a
-                    href="#servicesM"
-                    className="font-['Helvetica:Bold',sans-serif] text-[14px] tracking-[2.8px] uppercase
-               text-[#F1E9DA]
-               transition-colors duration-300 ease-out
-               hover:text-[#B64220]"
-                >
-                    services
-                </a>
-
-                <a
-                    href="#contact"
-                    className="font-['Helvetica:Bold',sans-serif] text-[14px] tracking-[2.8px] uppercase
-               text-[#F1E9DA]
-               transition-colors duration-300 ease-out
-               hover:text-[#B64220]"
-                >
-                    contact us
-                </a>
-
-            </nav>
-
             {menuOpen && (
                 <div className="fixed inset-0 z-60 flex">
 
