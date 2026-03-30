@@ -1,6 +1,6 @@
 import svgPaths from "./svg-lnnw8or0xj";
 import imgScreenshot20260224At121017Pm1 from "../assets/7b0b2511407939991732caa0f6265b4de72e59c2.png";
-import img1 from "../assets/img1.png";
+import img1 from "../assets/img1-1.png";
 import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.png"
 import img4 from "../assets/img4.png"
