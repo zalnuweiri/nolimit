@@ -1426,15 +1426,15 @@ export default function SilentHWebsiteHomeDesktop() {
                     <HoverVideo img={img3} video="/Vid3-compressed.mp4" className="h-[652px]"/>
 
                     {/* feature */}
-                    <HoverVideo img={img4} video="/Vid4-compressed.mp4" className="col-span-3 h-[640px]"/>
+                    <HoverVideo img={img4} video="/vid4-compressed.mp4" className="col-span-3 h-[640px]"/>
 
                     {/* row 3 */}
-                    <HoverVideo img={img6} video="/Vid5-compressed.mp4" className="h-[652px]"/>
-                    <HoverVideo img={img7} video="/Vid6-compressed.mp4" className="h-[652px]"/>
-                    <HoverVideo img={img8} video="/Vid7-compressed.mp4" className="h-[652px]"/>
+                    <HoverVideo img={img6} video="/vid5-compressed.mp4" className="h-[652px]"/>
+                    <HoverVideo img={img7} video="/vid6-compressed.mp4" className="h-[652px]"/>
+                    <HoverVideo img={img8} video="/vid7-compressed.mp4" className="h-[652px]"/>
 
                     {/* bottom feature */}
-                    <HoverVideo img={img9} video="/Vid8-compressed.mp4" className="col-span-3 h-[640px]"/>
+                    <HoverVideo img={img9} video="/vid8-compressed.mp4" className="col-span-3 h-[640px]"/>
 
                 </div>
             </section>
