@@ -738,7 +738,12 @@ function Cities() {
         <div className="flex flex-col items-center gap-[40px] 2xl:gap-[100px] mt-[80px] xl:text-right xl:items-end">
 
             {/* TORONTO */}
-            <div className="flex flex-col items-center gap-[6px] xl:items-end">
+            <a
+                href="https://maps.app.goo.gl/PmJrSaTeKG2DjJzG9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-[6px] xl:items-end cursor-pointer"
+            >
                 <p className="
           font-['Helvetica',sans-serif]
           font-[700]
@@ -763,10 +768,10 @@ function Cities() {
           leading-[16.8px]
           xl:text-right
           xl:items-end
-        ">
+            ">
                     383 Adelaide St West
                 </p>
-            </div>
+            </a>
 
             {/* NEW YORK */}
             <div className="flex flex-col items-center xl:text-right xl:items-end gap-[6px]">
@@ -780,7 +785,7 @@ function Cities() {
           leading-[16.8px]
           xl:text-right
           xl:items-end
-        ">
+               ">
                     New York
                 </p>
 
@@ -794,7 +799,7 @@ function Cities() {
           tracking-[2.8px]
           xl:text-right
           xl:items-end
-        ">
+            ">
                     416 West 13th St
                 </p>
             </div>
