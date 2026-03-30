@@ -33,11 +33,36 @@ import { VolumeX, Volume2 } from "lucide-react";
 
 function Affiliates() {
     return (
-        <div className="relative size-full" data-name="Affiliates">
-            <h2 className="font-['Rangen'] text-[#3A2E2A] text-[50px] 2xl:text-[55.4px] leading-[1.2] tracking-[2px] text-center pb-[60px] 2xl:pb-[80px] xl:scale-[1.1]">Our Co-Authors</h2>
-            <img src={affiliates} className="w-[681px] 2xl:w-[858px] h-[370.1px] xl:scale-[1.1] 2xl:scale-[1.3] object-contain ml-[20.4%] xl:ml-[27%] 2xl:ml-[28.3%] 2xl:pb-[10px]"/>
+        <div className="relative w-full flex flex-col items-center" data-name="Affiliates">
+
+            <h2 className="
+                font-['Rangen']
+                text-[#3A2E2A]
+                text-[50px]
+                xl:text-[55px]
+                2xl:text-[55.4px]
+                leading-[1.2]
+                tracking-[2px]
+                text-center
+                pb-[60px]
+                2xl:pb-[80px]
+            ">
+                Our Co-Authors
+            </h2>
+
+            <img
+                src={affiliates}
+                className="
+                    w-[681px]
+                    xl:w-[749.1px]
+                    2xl:w-[885.3px]
+                    h-[370px]
+                    object-contain
+                "
+            />
+
         </div>
-    )
+    );
 }
 
 function MobileAffiliates() {
