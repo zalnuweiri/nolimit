@@ -1368,13 +1368,13 @@ export default function SilentHWebsiteHomeDesktop() {
 
                 <div className="max-w-[520px] 2xl:max-w-[806px] flex flex-col gap-[40px] -mt-[40px]">
                     <p className="font-['Helvetica',sans-serif] text-[16px] 2xl:text-[24px] font-[400] leading-[1.2] tracking-[1.12px] text-[#3A2E2A]">
-                        We started Notlimited because we believe brands deserve more than marketing. They deserve a
-                        voice that cuts through. A strategy rooted in real culture.
+                        We believe brands deserve more than marketing. They deserve a voice that cuts through. A
+                        strategy rooted in real culture.
                     </p>
 
                     <p className="font-['Helvetica',sans-serif] font-[400] text-[16px] 2xl:text-[24px] font-[400] leading-[1.2] tracking-[1.12px] text-[#3A2E2A]">
-                        At our core, we are culture strategists, we are obsessed with how people think, what they care
-                        about, and what moves them. We don't just speak to audiences, we become part of their world.
+                        We are culture strategists, we are obsessed with how people think, what they care about, and
+                        what moves them. We don't just speak to audiences, we become part of their world.
                     </p>
 
                     <p className="font-['Helvetica',sans-serif] font-[400] text-[16px] 2xl:text-[24px] font-[400] leading-[1.2] tracking-[1.12px] text-[#3A2E2A]">
