@@ -960,39 +960,32 @@ function HoverVideo({ img, video, className }) {
     );
 }
 
+
 function MobileTapVideo({ img, video, className }) {
     const [playing, setPlaying] = useState(false);
     const [muted, setMuted] = useState(true);
     const videoRef = useRef(null);
 
     useEffect(() => {
-        if (playing && videoRef.current) {
+        if (videoRef.current) {
             videoRef.current.muted = muted;
-            videoRef.current.play();
         }
-    }, [playing, muted]);
+    }, [muted]);
 
     const handleTap = () => {
         if (!playing) {
+            videoRef.current?.play();
             setPlaying(true);
         } else {
-            if (videoRef.current) {
-                videoRef.current.pause();
-                videoRef.current.currentTime = 0;
-            }
+            videoRef.current?.pause();
+            videoRef.current.currentTime = 0;
             setPlaying(false);
         }
     };
 
     const toggleMute = (e) => {
-        e.stopPropagation(); // 🔑 prevents triggering play/pause
-        setMuted((prev) => {
-            const newMuted = !prev;
-            if (videoRef.current) {
-                videoRef.current.muted = newMuted;
-            }
-            return newMuted;
-        });
+        e.stopPropagation();
+        setMuted((prev) => !prev);
     };
 
     return (
@@ -1001,40 +994,28 @@ function MobileTapVideo({ img, video, className }) {
             className={`relative overflow-hidden rounded-[20px] ${className}`}
         >
             {/* IMAGE */}
-            {!playing && (
-                <img
-                    src={img}
-                    className="w-full h-full object-cover"
-                />
-            )}
+            <img
+                src={img}
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${playing ? "opacity-0" : "opacity-100"}`}
+            />
 
-            {/* VIDEO */}
-            {playing && (
-                <video
-                    ref={videoRef}
-                    muted={muted}
-                    playsInline
-                    loop
-                    preload="auto"
-                    className="w-full h-full object-cover"
-                >
-                    <source src={video} type="video/mp4" />
-                </video>
-            )}
+            {/* VIDEO (ALWAYS MOUNTED) */}
+            <video
+                ref={videoRef}
+                muted={muted}
+                playsInline
+                loop
+                preload="metadata"
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${playing ? "opacity-100" : "opacity-0"}`}
+            >
+                <source src={video} type="video/mp4" />
+            </video>
 
-            {/* 🔊 MUTE BUTTON */}
+            {/* MUTE BUTTON */}
             {playing && (
                 <button
                     onClick={toggleMute}
-                    className="
-                        absolute bottom-[12px] right-[12px]
-                        w-[36px] h-[36px]
-                        bg-black/40 backdrop-blur-sm
-                        border border-white/30
-                        rounded-full
-                        flex items-center justify-center
-                        text-[#F1E9DA]
-                    "
+                    className="absolute bottom-[12px] right-[12px] w-[36px] h-[36px] bg-black/40 backdrop-blur-sm border border-white/30 rounded-full flex items-center justify-center text-[#F1E9DA]"
                 >
                     {muted ? (
                         <VolumeX size={16} strokeWidth={2} />
